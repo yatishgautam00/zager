@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const companies = [
-  { src: "/logo/google.png", alt: "Google" },
+  { src: "/logo/Google.png", alt: "Google" },
   { src: "/logo/Netflix.png", alt: "Netflix" },
   { src: "/logo/IBM.png", alt: "IBM" },
   { src: "/logo/Amazonpay.png", alt: "Amazon Pay" },

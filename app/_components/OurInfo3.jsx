@@ -41,7 +41,7 @@ const OurInfo3 = () => {
         )}
         style={{ width: "50%" }}
       >
-        <Image src="/ourservices/ourinfo.png" alt="Sliding Image" layout="fill" objectFit="cover" />
+        <Image src="/ourServices/ourinfo.png" alt="Sliding Image" layout="fill" objectFit="cover" />
       </div>
       <div
         className={cn(
