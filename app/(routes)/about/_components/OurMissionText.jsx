@@ -25,7 +25,7 @@ function OurMissionText() {
         >
           Our mission is simple yet profound: to provide top-notch digital
           marketing and IT services that help our clients achieve their business
-          goals. Whether you're looking to enhance your online presence,
+          goals. Whether you&lsqu;re looking to enhance your online presence,
           streamline your IT infrastructure, or unlock new growth opportunities,
           we are here to make it happen with quality and dedication.
         </motion.p>
