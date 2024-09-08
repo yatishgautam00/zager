@@ -2,7 +2,12 @@
 import React from "react";
 import AboutImageCarousel from "./About-Image-Carousel";
 import { motion } from "framer-motion";
-import { slideIn, staggerContainer, textVariant } from "@/app/utils/motion";
+import {
+  slideIn,
+  fadeIn,
+  staggerContainer,
+  textVariant,
+} from "@/app/utils/motion";
 
 const About = () => (
   <section className="bg-white bg-opacity-5 overflow-x-hidden pt-2">
@@ -16,11 +21,11 @@ const About = () => (
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="innerWidth mx-auto flex flex-col"
+          className="innerWidth mx-auto flex lg:flex-row flex-col gap-8"
         >
           <motion.div
-            variants={slideIn("left", "tween", 0.2, 2)}
-            className="relative w-full md:-mt-[20px] -mt-[12px]"
+            variants={fadeIn("right", "tween", 0.2, 1)}
+            className="flex-[0.75] flex justify-center flex-col"
           >
             <div className=" lg:col-span-1 flex flex-col justify-between  text-white">
               <h2 className="text-4xl font-bold sm:text-5xl">About Us</h2>
