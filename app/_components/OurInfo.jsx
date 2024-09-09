@@ -33,7 +33,7 @@ const OurInfo = () => {
   }, []);
 
   return (
-    <div ref={componentRef} className="relative w-full h-[300px] overflow-hidden">
+    <div ref={componentRef} className="relative w-full lg:h-[450px] md:h-[400px] h-[350px] overflow-hidden">
       <div
         className={cn(
           "absolute top-0 left-0 h-full transition-transform duration-700 ease-in-out",

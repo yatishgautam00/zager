@@ -30,7 +30,7 @@ const About = () => (
             <div className=" lg:col-span-1 flex flex-col justify-between  text-white">
               <h2 className="text-4xl font-bold sm:text-5xl">About Us</h2>
 
-              <p className="mt-6 text-white text-2xl font-thin  text-justify">
+              <p className="mt-6 text-white text-lg md:text-xl font-thin  text-justify">
                 At Zager Digital Services, we believe that exceptional digital
                 marketing and IT solutions stem from a core commitment to
                 integrity, innovation, and excellence. Founded with the mission

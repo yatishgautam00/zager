@@ -29,7 +29,7 @@ function CompaniesScroll() {
             key={index}
             src={company.src}
             alt={company.alt}
-            className="h-auto md:w-48 w-24"
+            className="h-auto md:w-32 w-24"
           />
         ))}
       </motion.div>

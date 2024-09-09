@@ -23,5 +23,31 @@ export const insights = [
     subtitle:
       "Ready to take your business to the next level? Contact us today to learn how Zager Digital Services can help you achieve your digital marketing and IT goals. Together, we can build a brighter future for your business.",
   },
+];
 
+export const candidateCard = [
+  {
+    id: "1",
+    imgUrl: "/ourServices/ideal/creativity.jpg",
+    title: "CREATIVITY",
+    content: "Bring fresh ideas and innovative approaches to digital marketing and IT challenges."
+  },
+  {
+    id: "2",
+    imgUrl: "/ourServices/ideal/analysis.jpg",
+    title: "ANALYTICAL",
+    content:"Use data and insights to drive decisions and optimize performance."
+  },
+  {
+    id: "3",
+    imgUrl: "/ourServices/ideal/team.jpg",
+    title: "TEAM-ORIENTED",
+    content:"Collaborate effectively with colleagues and clients to achieve common goals."
+  },
+  {
+    id: "4",
+    imgUrl: "/ourServices/ideal/ethic.jpg",
+    title: "DRIVEN",
+    content:"Demonstrate a strong work ethic and a passion for excellence."
+  },
 ];
