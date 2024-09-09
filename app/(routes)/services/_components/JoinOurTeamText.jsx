@@ -27,7 +27,7 @@ const JoinOurTeamText = () => (
           Are you passionate about digital marketing and IT solutions?
         </span>{" "}
         <span className="">
-        At Zager Digital Services, we're always on the lookout for talented
+        At Zager Digital Services, we are always on the lookout for talented
         individuals who are eager to innovate and drive success. As a leader in
         the industry, we offer a dynamic work environment where creativity,
         collaboration, and professional growth are at the forefront of
