@@ -1,8 +1,8 @@
 "use client";
 import PlainCard from "../../_components/PlainCard";
 import { motion } from "framer-motion";
-import { TitleText, TypingText } from "@/app/_components/CustomText";
-import { staggerContainer } from "@/app/utils/motion";
+import { TitleText, TypingText, } from "@/app/_components/CustomText";
+import { staggerContainer,fadeIn } from "@/app/utils/motion";
 
 export default function WhyWorkWithUs() {
   const cards = [
@@ -35,12 +35,16 @@ export default function WhyWorkWithUs() {
     <section className="paddings relative z-10">
       <div className=" z-0" />
       <motion.div
-      variants={staggerContainer(0.25, 0.25)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className="innerWidth mx-auto flex flex-col"
-    >
+        variants={staggerContainer(0.25, 0.25)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="innerWidth mx-auto flexCenter flex-col"
+      >
+         <motion.p
+          variants={fadeIn("up", "tween", 0.2, 1)} 
+          className="mt-[8px] font-normal sm:text-[32px] text-lg  leading-relaxed    text-center text-white t=ext-secondary-white"
+        >
       <div className="flex flex-col items-center my-16 px-5">
         <h2 className="text-4xl font-bold text-center text-black mb-8 ">
           Why <span className="text-indigo-600">Work With Us?</span>
@@ -58,6 +62,7 @@ export default function WhyWorkWithUs() {
           ))}
         </div>
       </div>
+      </motion.p>
       </motion.div>
     </section>
   );
