@@ -9,7 +9,7 @@ const StartSteps = ({ number, text }) => {
         <div className="flex items-center justify-center w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]">
           <p className="font-bold text-[20px] text-white">0{number}</p>
         </div>
-        <p className="flex-1 ml-[30px] w-full font-normal text-[18px] text-[#B0B0B0] leading-[32px]">
+        <p className="flex-1 ml-[30px] w-full font-normal text-md md:text-lg text-[#B0B0B0] leading-[32px]">
           <span className="font-bold text-white">{firstWord} </span>
           {restOfText}
         </p>

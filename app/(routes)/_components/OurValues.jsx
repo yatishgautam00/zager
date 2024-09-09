@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { TitleText, TypingText } from "@/app/_components/CustomText";
 import StartSteps from "@/app/_components/StartSteps";
 import { staggerContainer, fadeIn, planetVariants } from "@/app/utils/motion";
-import { startingFeatures } from "@/app/constants";
 
-function OurValues() {
+
+function OurValues({startingFeatures}) {
   return (
      <section className="paddings relative z-10">
     <div className="gradient-03 z-0" />

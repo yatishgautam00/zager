@@ -33,7 +33,7 @@ export const MenuItem = ({ setActive, active, item, children }) => {
               <motion.div
                 transition={transition}
                 layoutId="active"
-                className="bg-white bg-opacity-5 dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-white/[0.2] dark:border-white/[0.2] shadow-xl"
+                className="bg-brand  dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-white/[0.2] dark:border-white/[0.2] shadow-xl"
               >
                 <motion.div layout className="w-max h-full p-4">
                   {children}
@@ -73,8 +73,8 @@ export const Menu = ({ setActive, children }) => {
   return (
 <nav
   onMouseLeave={() => setActive(null)}
-  className={`relative rounded-full w-full border-2 border-white shadow-input flex justify-between items-center space-x-4 px-16 transition-all duration-300 ease-in-out ${
-    showBorder ? "border-opacity-100 py-4" : "border-opacity-0 py-2"
+  className={`relative rounded-full w-full border-2 border-white shadow-input flex justify-between items-center space-x-4 md:px-16 px-4  transition-all duration-300 ease-in-out ${
+    showBorder ? "border-opacity-100 py-3" : "border-opacity-0 py-3"
   } `} // Ensure mx-4 is applied here
 >
   {children}

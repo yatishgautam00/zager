@@ -1,28 +1,35 @@
 import React from "react";
 import LandingView from "../_components/LandingView";
-import WhatWeDo from "./_components/WhatWeDo";
-import OurMission from "../_components/OurMissionCard";
-import AboutUs from "../_components/AboutUs";
-import ValuesSection from "./_components/ValueSection";
-import JoinUs from "./_components/JoinUs";
+import WhatWeDo from "../../_components/WhatWeDo";
 
+import AboutUsG from "../_components/AboutUsG";
+import { whatWeDoGyan } from "@/app/constants";
+import OurValues from "../_components/OurValues";
+import { ourValuesGyan, ourMissionOfGyan, aboutUsOfGyan } from "@/app/constants";
+import OurMissionGlobal from "../_components/OurMissionGlobal";
+import EndingPageCard from "../_components/EndingPageCard";
 function page() {
-  const content = {
-    ourMission:
-      "Our mission at Gyaanadri is to empower our audience with valuable knowledge and perspectives through a variety of content formats. We strive to be a trusted source for the latest news, thought-provoking interviews, and enriching podcasts. By curating and creating content that resonates with our audience, we aim to foster a more informed and connected community.",
 
-    about:
-      " Welcome to Gyaanadri, your premier destination for insightful content and engaging media. At Gyaanadri, we're dedicated to delivering high-quality, informative content that informs, inspires, and entertains. Our platform is designed to be a hub for diverse content ranging from breaking news and in-depth interviews to captivating podcasts and informative articles.",
-  };
   return (
-    <div className="flex bg-white flex-col gap-4 pb-16">
+    <div className="flex bg-white overflow-hidden flex-col   ">
       <LandingView heading={"GYAANADRI"} msg={"Clear vision & Pure thoughts"} />
-      <AboutUs content={content.about}/>
-      <OurMission content={content.ourMission} />
+      <AboutUsG content={aboutUsOfGyan}/>
+      <OurMissionGlobal content={ourMissionOfGyan} />
+      <WhatWeDo services={whatWeDoGyan} />
 
-      <WhatWeDo />
-      <ValuesSection />
-      <JoinUs />
+      <div className="bg-brand px-4 md:space-y-14 md:px-14 py-5">
+        <OurValues startingFeatures={ourValuesGyan} />
+      
+      </div>
+      <div className='py-10'>
+
+      <EndingPageCard
+          content={
+            "Explore the world of Gyaanadri and discover a wealth of content designed to enrich your knowledge and entertain your mind. Connect with us through social media, and stay tuned for the latest updates and content releases."
+          }
+          title={"JOIN US ON OUR JOURNEY"}
+        />
+    </div>
     </div>
   );
 }

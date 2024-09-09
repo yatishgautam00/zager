@@ -22,7 +22,7 @@ const PlainCard = ({ title, description, index }) => {
         }}
         viewport={{ once: true }}
       >
-        <div className="shadow-lg rounded-lg flex flex-col justify-between bg-brand p-6 pb-0 px-0 text-center w-full lg:w-[300px]">
+        <div className="shadow-lg rounded-lg flex flex-col justify-between bg-brand p-6 pb-0 px-0 text-center w-full lg:w-full">
           <div className="flex justify-center mb-4">
             <Image
               src="/ourServices/rocket.gif"

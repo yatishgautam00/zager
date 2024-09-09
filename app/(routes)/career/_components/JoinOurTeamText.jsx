@@ -20,7 +20,7 @@ const JoinOurTeamText = () => (
 
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-white text-secondary-white"
+        className="mt-[8px] font-normal md:text-xl text-lg text-center text-white text-secondary-white"
       >
         <span className="flex flex-col">
         <span className="font-extrabold text-white">

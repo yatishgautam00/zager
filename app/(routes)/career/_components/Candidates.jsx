@@ -8,7 +8,7 @@ import CandidateCard from "../../_components/CandidateCard";
 import { candidateCard } from "@/app/constants";
 
 const Candidate = () => {
-  const [active, setActive] = useState("1");
+  const [active, setActive] = useState("2");
 
   return (
     <section className="paddings relative" id="explore">
