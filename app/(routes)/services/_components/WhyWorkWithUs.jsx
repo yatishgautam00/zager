@@ -1,0 +1,64 @@
+"use client";
+import PlainCard from "../../_components/PlainCard";
+import { motion } from "framer-motion";
+import { TitleText, TypingText } from "@/app/_components/CustomText";
+import { staggerContainer } from "@/app/utils/motion";
+
+export default function WhyWorkWithUs() {
+  const cards = [
+    {
+      title: "Innovative Environment",
+      description:
+        " At Zager Digital Services, we thrive on innovation. Join us and work with cutting-edge technologies and strategies that are shaping the future of digital marketing and IT solutions.",
+      imageUrl: "/path-to-your-image.svg", // replace with correct image
+    },
+    {
+      title: "Professional Growth",
+      description:
+        " We are committed to your professional development. From mentorship programs to training workshops, we provide resources and opportunities to help you advance your career.",
+      imageUrl: "/path-to-your-image.svg", // replace with correct image
+    },
+    {
+      title: "Collaborative Culture",
+      description:
+        " Our team is our greatest asset. Experience a supportive and collaborative work culture where your ideas are valued and teamwork drives success.",
+      imageUrl: "/path-to-your-image.svg", // replace with correct image
+    },
+    {
+      title: "Work-Life Balance",
+      description:
+        " We understand the importance of maintaining a healthy work-life balance. Enjoy flexible working arrangements and a positive work environment that supports your personal and professional well-being.",
+      imageUrl: "/path-to-your-image.svg", // replace with correct image
+    },
+  ];
+  return (
+    <section className="paddings relative z-10">
+      <div className=" z-0" />
+      <motion.div
+      variants={staggerContainer(0.25, 0.25)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="innerWidth mx-auto flex flex-col"
+    >
+      <div className="flex flex-col items-center my-16 px-5">
+        <h2 className="text-4xl font-bold text-center text-black mb-8 ">
+          Why <span className="text-indigo-600">Work With Us?</span>
+        </h2>
+        <div className="grid fgrid-cols-1 lg:grid-cols-4  md:grid-cols-2 gap-4">
+          {cards.map((card, index) => (
+            <div
+            key={card}
+              className={`flex justify-center ${
+                index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
+              }`}
+            >
+              <PlainCard title={card.title} description={card.description} />
+            </div>
+          ))}
+        </div>
+      </div>
+      </motion.div>
+    </section>
+  );
+}
