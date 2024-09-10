@@ -80,7 +80,7 @@ function Navbar({ className }) {
             <MenuItem setActive={setActive} item={"Home"} />
           </Link>
           <Link href={"/about"}>
-          <MenuItem setActive={setActive} item={"About"}  />
+            <MenuItem setActive={setActive} item={"About"} />
           </Link>
           <MenuItem
             setActive={setActive}
@@ -90,10 +90,10 @@ function Navbar({ className }) {
           >
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/services">Web Development</HoveredLink>
+              <HoveredLink href="/services">Interface Design</HoveredLink>
               <HoveredLink href="/services">
-                Interface Design
+                Search Engine Optimization
               </HoveredLink>
-              <HoveredLink href="/services">Search Engine Optimization</HoveredLink>
               <HoveredLink href="/services">Branding</HoveredLink>
             </div>
           </MenuItem>
@@ -119,16 +119,12 @@ function Navbar({ className }) {
           <MenuItem setActive={setActive} active={active} item="Contact">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/contact">Web Development</HoveredLink>
-              <HoveredLink href="/contact">
-                Interface Design
-              </HoveredLink>
-              
+              <HoveredLink href="/contact">Interface Design</HoveredLink>
             </div>
           </MenuItem>
           <MenuItem setActive={setActive} active={active} item="Career">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/career">Career</HoveredLink>
-              
             </div>
           </MenuItem>
           <MenuItem setActive={setActive} active={active} item="Work">
@@ -136,7 +132,6 @@ function Navbar({ className }) {
               <HoveredLink href="/gyaanadari">GYAANADRI</HoveredLink>
               <HoveredLink href="/jk-works">JK WORKS</HoveredLink>
               <HoveredLink href="/ira">Ira Media & Productions</HoveredLink>
-              
             </div>
           </MenuItem>
         </div>
@@ -155,20 +150,39 @@ function Navbar({ className }) {
                 </SheetTitle>
               </SheetHeader>
               <div className="grid gap-4 py-4">
-                <MenuItem setActive={setActive} item={"Home"} />
-                <MenuItem setActive={setActive} item={"About"} />
+                <Link href={""}>
+                  <MenuItem setActive={setActive} item={"Home"} />
+                </Link>
+                <Link href={""}>
+                  <MenuItem setActive={setActive} item={"About"} />
+                </Link>
+                <Link href={""}>
+                  <DropdownMenuComponent
+                    title="Services"
+                    links={[
+                      { href: "/web-dev", label: "Web Development" },
+                      { href: "/interface-design", label: "Interface Design" },
+                      { href: "/seo", label: "SEO" },
+                      { href: "/branding", label: "Branding" },
+                    ]}
+                  />
+                </Link>
+                <Link href={""}>
+                  <MenuItem setActive={setActive} item="Contact" />
+                </Link>
+                <Link href={""}>
+                  <MenuItem setActive={setActive} item="Career" />
+                </Link>
+
                 <DropdownMenuComponent
-                  title="Services"
-                  links={[
-                    { href: "/web-dev", label: "Web Development" },
-                    { href: "/interface-design", label: "Interface Design" },
-                    { href: "/seo", label: "SEO" },
-                    { href: "/branding", label: "Branding" },
-                  ]}
-                />
-                <MenuItem setActive={setActive} item="Contact" />
-                <MenuItem setActive={setActive} item="Career" />
-                <MenuItem setActive={setActive} item="Work" />
+                    title="Work"
+                    links={[
+                      { href: "/gyaanadari", label: "GYAANADARI" },
+                      { href: "/ira", label: "IRA" },
+                      { href: "/jk-works", label: "JK WORKS" },
+                
+                    ]}
+                  />
               </div>
               <SheetFooter>
                 <SheetClose asChild>
