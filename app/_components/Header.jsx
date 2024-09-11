@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import {
   HoveredLink,
   Menu,
@@ -8,7 +9,7 @@ import {
 } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { TfiMenu } from "react-icons/tfi";
+import { TfiMenu, TfiAngleDown } from "react-icons/tfi";
 import {
   Sheet,
   SheetClose,
@@ -27,8 +28,8 @@ import {
   DropdownMenuTrigger,
   DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu";
-import { TfiAngleDown } from "react-icons/tfi";
 import Link from "next/link";
+
 export default function Header() {
   return (
     <div className="relative w-full flex h-[80px] items-center justify-center">
@@ -41,6 +42,7 @@ export default function Header() {
 }
 
 function Navbar({ className }) {
+  const pathname = usePathname(); // Get the current path
   const [active, setActive] = useState(null);
   const [showLogo, setShowLogo] = useState(false);
 
@@ -49,7 +51,6 @@ function Navbar({ className }) {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
 
-      // Show logo after scrolling half of the screen
       if (scrollPosition > windowHeight / 2) {
         setShowLogo(true);
       } else {
@@ -67,42 +68,57 @@ function Navbar({ className }) {
   return (
     <div
       className={cn(
-        "fixed top-10 inset-x-0 max-w-full rounded-full  bg-brand md:mx-5  z-50",
+        "fixed top-10 inset-x-0 max-w-full rounded-full bg-brand md:mx-5 z-50",
         className
       )}
     >
       <Menu
         setActive={setActive}
-        className="bg-brand flex flex-row lg:gap-6 justify-between  "
+        className="bg-brand flex flex-row lg:gap-6 justify-between"
       >
-        <div className=" flex-row lg:gap-20 gap-2 md:gap-10 hidden md:flex">
-          <Link href={"/"}>
-            <MenuItem setActive={setActive} item={"Home"} />
+        <div className="flex-row lg:gap-20 gap-2 md:gap-10 hidden md:flex">
+          <Link href="/">
+            <MenuItem
+              setActive={setActive}
+              item="Home"
+              className={cn({
+                "text-blue-500": pathname === "/",
+                "text-white": pathname !== "/",
+              })}
+              path={pathname}
+              activePath={"/"}
+            />
           </Link>
-          <Link href={"/about"}>
-            <MenuItem setActive={setActive} item={"About"} />
+          <Link href="/about">
+            <MenuItem
+              setActive={setActive}
+              item="About"
+              className={cn({
+                "text-blue-500": pathname === "/about",
+                "text-white": pathname !== "/about",
+              })}
+              path={pathname}
+              activePath={"/about"}
+            />
           </Link>
-          <MenuItem
-            setActive={setActive}
-            active={active}
-            item="Services"
-            className="justify-start text-blue-500"
-          >
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/services">Web Development</HoveredLink>
-              <HoveredLink href="/services">Interface Design</HoveredLink>
-              <HoveredLink href="/services">
-                Search Engine Optimization
-              </HoveredLink>
-              <HoveredLink href="/services">Branding</HoveredLink>
-            </div>
-          </MenuItem>
+          <Link href="/services">
+            <MenuItem
+              setActive={setActive}
+              item="Services"
+              className={cn({
+                "text-blue-500": pathname === "/services",
+                "text-white": pathname !== "/services",
+              })}
+              path={pathname}
+              activePath={"/services"}
+            />
+          </Link>
         </div>
 
         {/* Logo */}
         <div
           className={cn(
-            "transition-opacity duration-500 ease-in-out ",
+            "transition-opacity duration-500 ease-in-out",
             showLogo ? "opacity-100" : "md:opacity-0 opacity-100"
           )}
         >
@@ -116,31 +132,48 @@ function Navbar({ className }) {
         </div>
 
         <div className="md:flex hidden flex-row lg:gap-20 gap-2 md:gap-10">
-          <MenuItem setActive={setActive} active={active} item="Contact">
+          <Link href="/contact">
+            <MenuItem
+              setActive={setActive}
+              item="Contact"
+              className={cn({
+                "text-blue-500": pathname === "/contact",
+                "text-white": pathname !== "/contact",
+              })}
+              path={pathname}
+              activePath={"/contact"}
+            />
+          </Link>
+          <Link href="/career">
+            <MenuItem
+              setActive={setActive}
+              item="Career"
+              className={cn({
+                "text-blue-500": pathname === "/career",
+                "text-white": pathname !== "/career",
+              })}
+              path={pathname}
+              activePath={"/career"}
+            />
+          </Link>
+          <MenuItem setActive={setActive} active={active} item="Partner"
+          path={pathname}
+          activePath={"/partner"}
+          >
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/contact">Web Development</HoveredLink>
-              <HoveredLink href="/contact">Interface Design</HoveredLink>
-            </div>
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Career">
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/career">Career</HoveredLink>
-            </div>
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Work">
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/gyaanadari">GYAANADRI</HoveredLink>
+              <HoveredLink href="/gyaanadari">GYAANADARI</HoveredLink>
               <HoveredLink href="/jk-works">JK WORKS</HoveredLink>
               <HoveredLink href="/ira">Ira Media & Productions</HoveredLink>
             </div>
           </MenuItem>
         </div>
 
-        <div className="md:hidden  ">
+        {/* Mobile Menu */}
+        <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <button className="flex p-4 py-2 bg-white  rounded-md bg-opacity-5 justify-center items-center cursor-pointer">
-                <TfiMenu className="text-2xl " />
+              <button className="flex p-4 py-2 bg-white rounded-md bg-opacity-5 justify-center items-center cursor-pointer">
+                <TfiMenu className="text-2xl" />
               </button>
             </SheetTrigger>
             <SheetContent className="bg-brand">
@@ -150,39 +183,77 @@ function Navbar({ className }) {
                 </SheetTitle>
               </SheetHeader>
               <div className="grid gap-4 py-4">
-                <Link href={""}>
-                  <MenuItem setActive={setActive} item={"Home"} />
-                </Link>
-                <Link href={""}>
-                  <MenuItem setActive={setActive} item={"About"} />
-                </Link>
-                <Link href={""}>
-                  <DropdownMenuComponent
-                    title="Services"
-                    links={[
-                      { href: "/web-dev", label: "Web Development" },
-                      { href: "/interface-design", label: "Interface Design" },
-                      { href: "/seo", label: "SEO" },
-                      { href: "/branding", label: "Branding" },
-                    ]}
+                <Link href="/">
+                  <MenuItem
+                    setActive={setActive}
+                    item="Home"
+                    className={cn({
+                      "text-blue-500": pathname === "/",
+                      "text-white": pathname !== "/",
+                    })}
+                    path={pathname}
+              activePath={"/"}
                   />
                 </Link>
-                <Link href={""}>
-                  <MenuItem setActive={setActive} item="Contact" />
+                <Link href="/about">
+                  <MenuItem
+                    setActive={setActive}
+                    item="About"
+                    className={cn({
+                      "text-blue-500": pathname === "/about",
+                      "text-white": pathname !== "/about",
+                    })}
+                    path={pathname}
+              activePath={"/about"}
+                  />
                 </Link>
-                <Link href={""}>
-                  <MenuItem setActive={setActive} item="Career" />
+                <Link href="/services">
+                  <MenuItem
+                    setActive={setActive}
+                    item="Services"
+                    className={cn({
+                      "text-blue-500": pathname === "/services",
+                      "text-white": pathname !== "/services",
+                    })}
+                    path={pathname}
+              activePath={"/services"}
+                  />
+                </Link>
+                <Link href="/contact">
+                  <MenuItem
+                    setActive={setActive}
+                    item="Contact"
+                    className={cn({
+                      "text-blue-500": pathname === "/contact",
+                      "text-white": pathname !== "/contact",
+                    })}
+                    path={pathname}
+              activePath={"/contact"}
+                  />
+                </Link>
+                <Link href="/contact">
+                  <MenuItem
+                    setActive={setActive}
+                    item="Career"
+                    className={cn({
+                      "text-blue-500": pathname === "/career",
+                      "text-white": pathname !== "/career",
+                    })}
+                    path={pathname}
+              activePath={"/career"}
+                  />
                 </Link>
 
                 <DropdownMenuComponent
-                    title="Work"
-                    links={[
-                      { href: "/gyaanadari", label: "GYAANADARI" },
-                      { href: "/ira", label: "IRA" },
-                      { href: "/jk-works", label: "JK WORKS" },
-                
-                    ]}
-                  />
+                  title="Partner"
+                  links={[
+                    { href: "/gyaanadari", label: "GYAANADARI" },
+                    { href: "/ira", label: "IRA" },
+                    { href: "/jk-works", label: "JK WORKS" },
+                  ]}
+                  path={pathname}
+              activePath={"/partner1"}
+                />
               </div>
               <SheetFooter>
                 <SheetClose asChild>
@@ -210,9 +281,9 @@ function DropdownMenuComponent({ title, links }) {
         <DropdownMenuLabel></DropdownMenuLabel>
         {links.map((link) => (
           <DropdownMenuItem asChild key={link.href}>
-            <a href={link.href} className="w-full px-2 py-1 ">
+            <Link href={link.href} className="w-full px-2 py-1">
               {link.label}
-            </a>
+            </Link>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

@@ -9,7 +9,10 @@ import {
   ourMissionOfira,
   whatWeDoira,
   ourValuesOfira,
+  WhyChooseUsira
 } from "@/app/constants";
+import WhyChooseUs from "../_components/WhyChooseUs";
+
 function page() {
   return (
     <div className="overflow-hidden  lg:space-y-6 bg-white">
@@ -23,6 +26,7 @@ function page() {
       <div className="bg-brand px-4 md:space-y-14 md:px-14 md:py-10 py-4 ">
         <OurValues startingFeatures={ourValuesOfira} />
       </div>
+      <WhyChooseUs reasons={WhyChooseUsira}/>
     </div>
   );
 }

@@ -5,7 +5,6 @@ import OurService from "./_components/OurService";
 import OurInfo from "./_components/OurInfo";
 import OurInfo2 from "./_components/OurInfo2";
 import OurInfo3 from "./_components/OurInfo3";
-import OurInfo4 from "./_components/OurInfo4";
 import CompaniesScroll from "./_components/CompaniesScroll";
 import ContactUs from "./_components/ContactUs";
 
@@ -19,9 +18,9 @@ export default function Home() {
       <OurInfo />
       <OurInfo2 />
       <OurInfo3 />
-      <OurInfo4 />
+      {/* <OurInfo4 /> */}
       </div>
-      <div className="pb-10">
+      <div className="">
       <CompaniesScroll />
       </div>
       <ContactUs  />

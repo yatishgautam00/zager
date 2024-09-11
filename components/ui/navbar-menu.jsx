@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { TfiMenu, TfiAngleDown } from "react-icons/tfi";
 
 const transition = {
   type: "spring",
@@ -13,14 +14,14 @@ const transition = {
   restSpeed: 0.001,
 };
 
-export const MenuItem = ({ setActive, active, item, children }) => {
+export const MenuItem = ({ setActive, active, item, children,path,activePath }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-white hover:opacity-[0.9] dark:text-white"
+        className={`cursor-pointer text-white flex flex-row items-center hover:opacity-[0.9] dark:text-white ${path === activePath && "border-b-2 scale-110"}`}
       >
-        {item}
+        {item} {activePath ==='/partner' && <TfiAngleDown className="text-lg mr-1 pt-1 font-extrabold"/>}
       </motion.p>
       {active !== null && (
         <motion.div

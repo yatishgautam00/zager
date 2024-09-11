@@ -100,89 +100,269 @@ export const ourMissionOfJK =
 export const ourMissionOfira =
   "At Ira Media & Productions, our mission is to elevate your brand through innovative media solutions and high-quality productions. We are dedicated to crafting compelling narratives and creating visually stunning content that not only captures attention but also drives results. Our goal is to be your trusted partner in navigating the ever-evolving media landscape.";
 
-  export const aboutUsOfira =
+export const aboutUsOfira =
   "Welcome to Ira Media & Productions, where creativity meets strategy to bring your media projects to life. At Ira Media & Productions, we specialize in delivering a comprehensive range of media and production services that include video productions, digital ads, films, digital media services, media consulting, and research. Our mission is to transform your vision into impactful and engaging content that resonates with your audience";
 
-  export const whatWeDoJK = [
-    {
-      title: "DESIGN",
-      description:
-        "Our team of experienced architects and designers crafts innovative and functional designs that reflect your style and needs. From residential and commercial buildings to bespoke interiors, we ensure every design is both aesthetically pleasing and practical.",
-      imageUrl: "/ourservices/gif1.gif",
-    },
-    {
-      title: "PLANNING",
-      description:
-        "We provide comprehensive planning services to ensure your project progresses smoothly from concept to completion. Our meticulous approach to planning covers every detail, including site analysis, space utilization, and regulatory compliance.",
-      imageUrl: "https://via.placeholder.com/100x100",
-    },
-    {
-      title: "CONSTRUCTION",
-      description:
-        "At JK Works, we manage the construction process with expertise and efficiency. Our team oversees every aspect of the building process, ensuring that construction meets our high standards of quality and aligns with the project’s design and budget.",
-      imageUrl: "https://via.placeholder.com/100x100",
-    },
-    {
-      title: "MANAGEMENT",
-      description:
-        "Our project management services ensure that every project is completed on time and within budget. We coordinate with contractors, suppliers, and stakeholders to manage all phases of the project, from initial planning through to final execution.",
-      imageUrl: "https://via.placeholder.com/100x100",
-    },
-  ];
-  
+export const whatWeDoJK = [
+  {
+    title: "DESIGN",
+    description:
+      "Our team of experienced architects and designers crafts innovative and functional designs that reflect your style and needs. From residential and commercial buildings to bespoke interiors, we ensure every design is both aesthetically pleasing and practical.",
+    imageUrl: "/ourservices/gif1.gif",
+  },
+  {
+    title: "PLANNING",
+    description:
+      "We provide comprehensive planning services to ensure your project progresses smoothly from concept to completion. Our meticulous approach to planning covers every detail, including site analysis, space utilization, and regulatory compliance.",
+    imageUrl: "https://via.placeholder.com/100x100",
+  },
+  {
+    title: "CONSTRUCTION",
+    description:
+      "At JK Works, we manage the construction process with expertise and efficiency. Our team oversees every aspect of the building process, ensuring that construction meets our high standards of quality and aligns with the project’s design and budget.",
+    imageUrl: "https://via.placeholder.com/100x100",
+  },
+  {
+    title: "MANAGEMENT",
+    description:
+      "Our project management services ensure that every project is completed on time and within budget. We coordinate with contractors, suppliers, and stakeholders to manage all phases of the project, from initial planning through to final execution.",
+    imageUrl: "https://via.placeholder.com/100x100",
+  },
+];
+
+export const ourValuesOfJK = [
+  "Creativity : We embrace creativity and innovation in every project, pushing boundaries to create unique and inspiring designs.",
+  "Quality: We are committed to the highest standards of quality in both design and construction, ensuring that every project meets our rigorous standards.",
+  "Collaboration:  We believe in the power of collaboration. By working closely with our clients and partners, we ensure that every project reflects your vision and meets your expectations.",
+  "Sustainability: We incorporate sustainable practices and materials into our designs to create eco-friendly spaces that contribute to a healthier environment.",
+];
+
+export const whatWeDoira = [
+  {
+    title: "DIGITAL MEDIA SERVICE",
+    description:
+      "We offer a range of digital media services including content creation, social media management, and digital strategy. Our approach is designed to enhance your digital footprint and maximize your online impact.",
+    imageUrl: "/ourservices/gif1.gif",
+  },
+  {
+    title: "FILMS",
+    description:
+      "Whether it’s a short film, documentary, or feature-length project, we bring your cinematic vision to life. Our expertise in film production ensures high-quality storytelling and technical excellence in every frame.",
+    imageUrl: "https://via.placeholder.com/100x100",
+  },
+  {
+    title: "DIGITAL ADS",
+    description:
+      "Our team designs and executes effective digital advertising campaigns that boost your online presence. We utilize targeted strategies and data-driven insights to ensure your ads reach the right audience and deliver measurable results.",
+    imageUrl: "https://via.placeholder.com/100x100",
+  },
+  {
+    title: "VIDEO PRODUCTION",
+    description:
+      "We create captivating video content that tells your story and engages your audience. From promotional videos and corporate videos to event coverage and brand storytelling, we handle every aspect of video production with precision and creativity.",
+    imageUrl: "https://via.placeholder.com/100x100",
+  },
+  {
+    title: "RESERACH",
+    description:
+      " Our research services deliver valuable insights and data to inform your media strategies. We conduct thorough research to understand market trends, audience behavior, and competitive landscape, ensuring that your media efforts are grounded in evidence.",
+    imageUrl: "https://via.placeholder.com/100x100",
+  },
+  {
+    title: "MEDIA CONSULTING",
+    description:
+      "Navigate the complex media landscape with our expert consulting services. We provide strategic advice and actionable insights to help you optimize your media presence and achieve your objectives.",
+    imageUrl: "https://via.placeholder.com/100x100",
+  },
+];
+
+export const ourValuesOfira = [
+  "Creativity : We embrace creativity and innovation in every project, striving to deliver unique and impactful content that stands out.",
+  "Quality: We are committed to the highest standards of quality in all aspects of our work, from production to strategy.",
+  "Collaboration:   We believe in the power of collaboration. By working closely with our clients, we ensure that their vision is realized and their goals are achieved.",
+  "Sustainability: We operate with transparency and honesty, building trust through our professional conduct and reliable service.",
+];
+
+export const WhyChooseUsJK = [
+  {
+    title: "Expertise",
+    description:
+      "Our team of experienced professionals brings a wealth of knowledge and skill to every project, ensuring exceptional results.",
+    icon: (
+      <svg
+        className="size-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    title: "Comprehensive Services",
+    description:
+      "From video production and digital ads to media consulting and research, we offer a full suite of services to meet all your media needs.",
+    icon: (
+      <svg
+        className="size-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    title: "Client-Focused Approach",
+    description:
+      "We tailor our services to fit your unique needs and objectives, providing personalized solutions that deliver real value.",
+    icon: (
+      <svg
+        className="size-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+        ></path>
+      </svg>
+    ),
+  },
+];
 
 
-  export const ourValuesOfJK = [
-    "Creativity : We embrace creativity and innovation in every project, pushing boundaries to create unique and inspiring designs.",
-    "Quality: We are committed to the highest standards of quality in both design and construction, ensuring that every project meets our rigorous standards.",
-    "Collaboration:  We believe in the power of collaboration. By working closely with our clients and partners, we ensure that every project reflects your vision and meets your expectations.",
-    "Sustainability: We incorporate sustainable practices and materials into our designs to create eco-friendly spaces that contribute to a healthier environment.",
-  ];
+export const WhyChooseUsira = [
+  {
+    title: "Expertise",
+    description:
+      "Our team of experienced professionals brings a wealth of knowledge and skill to every project, ensuring exceptional results.",
+    icon: (
+      <svg
+        className="size-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    title: "Comprehensive Services",
+    description:
+      "From video production and digital ads to media consulting and research, we offer a full suite of services to meet all your media needs.",
+    icon: (
+      <svg
+        className="size-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+        ></path>
+      </svg>
+    ),
+  },
+  {
+    title: "Client-Focused Approach",
+    description:
+      "We tailor our services to fit your unique needs and objectives, providing personalized solutions that deliver real value.",
+    icon: (
+      <svg
+        className="size-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+        ></path>
+      </svg>
+    ),
+  },
+];
+
+export const DigitalMarketingButtons = [
+  'Logo Works',
+  'Web Design',
+  'UI/UX',
+  'Product Design',
+  'Brochure And Package Design',
+  'Social Media Design',
+  'Typography',
+  '3D Design',
+  'Flyer Design',
+  'Graphic Design',
+  'Business Card',
+  'Motion Design',
+  'Bookcover',
+  'Advertising',
+  'Illustration',
+  'Brand Identity',
+  'Wordpress And Shopify Website',
+];
 
 
-  export const whatWeDoira= [
-    {
-      title: "DIGITAL MEDIA SERVICE",
-      description:
-        "We offer a range of digital media services including content creation, social media management, and digital strategy. Our approach is designed to enhance your digital footprint and maximize your online impact.",
-      imageUrl: "/ourservices/gif1.gif",
-    },
-    {
-      title: "FILMS",
-      description:
-        "Whether it’s a short film, documentary, or feature-length project, we bring your cinematic vision to life. Our expertise in film production ensures high-quality storytelling and technical excellence in every frame.",
-      imageUrl: "https://via.placeholder.com/100x100",
-    },
-    {
-      title: "DIGITAL ADS",
-      description:
-        "Our team designs and executes effective digital advertising campaigns that boost your online presence. We utilize targeted strategies and data-driven insights to ensure your ads reach the right audience and deliver measurable results.",
-      imageUrl: "https://via.placeholder.com/100x100",
-    },
-    {
-      title: "VIDEO PRODUCTION",
-      description:
-        "We create captivating video content that tells your story and engages your audience. From promotional videos and corporate videos to event coverage and brand storytelling, we handle every aspect of video production with precision and creativity.",
-      imageUrl: "https://via.placeholder.com/100x100",
-    },
-    {
-      title: "RESERACH",
-      description:
-        " Our research services deliver valuable insights and data to inform your media strategies. We conduct thorough research to understand market trends, audience behavior, and competitive landscape, ensuring that your media efforts are grounded in evidence.",
-      imageUrl: "https://via.placeholder.com/100x100",
-    },
-    {
-      title: "MEDIA CONSULTING",
-      description:
-        "Navigate the complex media landscape with our expert consulting services. We provide strategic advice and actionable insights to help you optimize your media presence and achieve your objectives.",
-      imageUrl: "https://via.placeholder.com/100x100",
-    },
-  ];
-  
-
-  export const ourValuesOfira = [
-    "Creativity : We embrace creativity and innovation in every project, striving to deliver unique and impactful content that stands out.",
-    "Quality: We are committed to the highest standards of quality in all aspects of our work, from production to strategy.",
-    "Collaboration:   We believe in the power of collaboration. By working closely with our clients, we ensure that their vision is realized and their goals are achieved.",
-    "Sustainability: We operate with transparency and honesty, building trust through our professional conduct and reliable service.",
-  ];
+export const DigitalMarketingButtons01 = [
+  'Content Marketing',
+  'Website Marketing',
+  'Social Media Marketing',
+  'SEO',
+  'Paid Search',
+  'Affiliate Marketing',
+  'Search Engine',
+  'Branding',
+  'Data Analytics',
+  'Analytics',
+  'Influencer Marketing',
+  'Pay-Per-Click',
+  'Conversion Rate Optimization',
+  'Email Marketing',
+  'Social Media Management',
+];
