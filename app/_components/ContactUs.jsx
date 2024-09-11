@@ -3,7 +3,7 @@ import React from "react";
 function ContactUs() {
   return (
     <div className="flex items-center justify-center pt-10 pb-10 bg-gray-300">
-      <div className="grid md:grid-cols-2 gap-6 text-white rounded-lg p-8 w-full max-w-4xl bg-slate-800 shadow-md">
+      <div className="grid md:grid-cols-2 gap-6 text-white rounded-lg p-8 w-full max-w-4xl bg-brand shadow-md">
         {/* Contact Details Section */}
         <div className="flex flex-col justify-start space-y-4">
           <div>
@@ -63,7 +63,7 @@ function ContactUs() {
             <div className="text-center">
               <button
                 type="submit"
-                className="px-6 py-2 text-brand bg-white rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="px-6 py-2 text-brand font-bold bg-white rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 Send Message
               </button>
