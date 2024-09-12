@@ -25,7 +25,7 @@ function OurMissionText() {
         >
          <span className="font-bold"> Our mission is simple yet profound:</span> To provide top-notch digital
           marketing and IT Solutions that help our clients achieve their business
-          goals. Whether you're looking to enhance your online presence,
+          goals. Whether you are looking to enhance your online presence,
           streamline your IT infrastructure, or unlock new growth opportunities,
           we are here to make it happen with quality and dedication.
         </motion.p>
