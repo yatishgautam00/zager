@@ -20,19 +20,20 @@ const AboutUsText = () => (
 
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-white text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[32px] items-center text-justify flex flex-col text-[20px] text-center text-white text-secondary-white"
       >
         <span className="font-extrabold text-white">
           Welcome to Zager Digital Services!
         </span>{" "}
-        is a new At Zager Digital Services, we believe that exceptional digital
+        <span>
+        At Zager Digital Services, we believe that exceptional digital
         marketing and IT solutions stem from a core commitment to&nbsp;
         <span className="font-extrabold text-white">
           integrity, innovation, and excellence.
         </span>
         Founded with the mission to empower businesses through cutting-edge
         technology and strategic marketing, we take pride in delivering tailored
-        solutions that drive growth and success.
+        solutions that drive growth and success.</span>
       </motion.p>
       <motion.div variants={fadeIn("up", "tween", 0.3, 1)}>
         <Link href="#ourmission" className="w-full flex items-center justify-center">

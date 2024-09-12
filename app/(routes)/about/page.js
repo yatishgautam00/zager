@@ -11,7 +11,7 @@ import { startingFeatures } from "@/app/constants";
 function page() {
   return (
     <main className="bg-primary-black overflow-hidden flex flex-col gap-14">
-      <Hero />
+      {/* <Hero /> */}
       <div className="pt-24 px-14">
         <AboutUsText />
       </div>

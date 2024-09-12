@@ -6,11 +6,11 @@ const StartSteps = ({ number, text }) => {
   
     return (
       <div className="flex flex-row w-full">
-        <div className="flex items-center justify-center w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]">
-          <p className="font-bold text-[20px] text-white">0{number}</p>
+        <div className="flex items-center justify-center w-min px-4 rounded-sm h-min py-3 bg-[#323F5D]">
+          <p className="font-bold text-[20px] text-white">{firstWord}</p>
         </div>
         <p className="flex-1 ml-[30px] w-full font-normal text-md md:text-lg text-[#B0B0B0] leading-[32px]">
-          <span className="font-bold text-white">{firstWord} </span>
+          {/* <span className="font-bold text-white">{firstWord} </span> */}
           {restOfText}
         </p>
       </div>

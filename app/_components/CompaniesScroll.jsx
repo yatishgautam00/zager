@@ -13,7 +13,7 @@ const companies = [
 
 function CompaniesScroll() {
   return (
-    <div className="relative w-full overflow-hidden bg-gray-300 ">
+    <div className="relative w-full overflow-hidden bg-gray-300 " >
       <motion.div
         className="flex md:space-x-24 space-x-12"
         initial={{ x: 0 }}

@@ -19,24 +19,17 @@ function page() {
         keywords={DigitalMarketingButtons01} // Dynamic keywords
         imagePosition="left"
       />
-      <DigitalMarketing
-        imageSrc="/pana.png" // Dynamic image
-        title="CONTENT CREATION" // Dynamic title
-        description="The process of generating engaging and valuable content in various formats  to attract and retain  audience, support marketing goals, and establish a brand's online presence." // Dynamic description
-        keywords={DigitalMarketingButtons01} // Dynamic keywords
-        imagePosition="right"
-      />
-      <DigitalMarketing
-        imageSrc="/pana2.png" // Dynamic image
-        title="ARCHITECTURE" // Dynamic title
-        description="The art and science of designing and constructing buildings and other structures, focusing on aesthetics, functionality, and sustainability." // Dynamic description
-        keywords={DigitalMarketingButtons01} // Dynamic keywords
+      <DesigningSection
+        title="WEBSITE DEVLOPMENT"
+        description="The process of building and maintaining websites, involving tasks such as web design, coding, content creation, and server configuration to ensure functionality, user experience, and performance."
+        buttons={DigitalMarketingButtons}
         imagePosition="left"
       />
+
       <DigitalMarketing
-        imageSrc="/pana3.png" // Dynamic image
-        title="Media Production" // Dynamic title
-        description="The process of creating content for various media platforms, encompassing all stages from concept development to final editing and distribution." // Dynamic description
+        imageSrc="/pana4.png" // Dynamic image
+        title="IT SOLUTION AND SEVICES" // Dynamic title
+        description="Support and technologies for software, networks, and tech issues to improve efficiency and address challenges." // Dynamic description
         keywords={DigitalMarketingButtons01} // Dynamic keywords
         imagePosition="right"
       />
@@ -46,16 +39,24 @@ function page() {
         buttons={DigitalMarketingButtons}
         imagePosition="right"
       />
-      <DesigningSection
-        title="WEBSITE DEVLOPMENT"
-        description="The process of building and maintaining websites, involving tasks such as web design, coding, content creation, and server configuration to ensure functionality, user experience, and performance."
-        buttons={DigitalMarketingButtons}
+      <DigitalMarketing
+        imageSrc="/pana.png" // Dynamic image
+        title="CONTENT CREATION" // Dynamic title
+        description="The process of generating engaging and valuable content in various formats  to attract and retain  audience, support marketing goals, and establish a brand's online presence." // Dynamic description
+        keywords={DigitalMarketingButtons01} // Dynamic keywords
+        imagePosition="right"
+      />
+      <DigitalMarketing
+        imageSrc="/pana3.png" // Dynamic image
+        title="Media Production" // Dynamic title
+        description="The process of creating content for various media platforms, encompassing all stages from concept development to final editing and distribution." // Dynamic description
+        keywords={DigitalMarketingButtons01} // Dynamic keywords
         imagePosition="left"
       />
       <DigitalMarketing
-        imageSrc="/pana4.png" // Dynamic image
-        title="Media Production" // Dynamic title
-        description="The process of creating content for various media platforms, encompassing all stages from concept development to final editing and distribution." // Dynamic description
+        imageSrc="/pana2.png" // Dynamic image
+        title="ARCHITECTURE" // Dynamic title
+        description="The art and science of designing and constructing buildings and other structures, focusing on aesthetics, functionality, and sustainability." // Dynamic description
         keywords={DigitalMarketingButtons01} // Dynamic keywords
         imagePosition="right"
       />

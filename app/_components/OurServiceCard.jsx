@@ -48,7 +48,7 @@ function OurServiceCard() {
   useEffect(() => {
     // Randomly select some cards to flip and zoom
     const flipIndices = new Set();
-    while (flipIndices.size < Math.floor(1)) {
+    while (flipIndices.size < Math.floor(0)) {
       flipIndices.add(Math.floor(Math.random() * services.length));
     }
     setFlipped(Array.from(flipIndices));

@@ -7,7 +7,7 @@ import { slideIn, staggerContainer, textVariant } from "@/app/utils/motion";
 import About from "./About";
 
 const Hero = () => (
-  <section className="yPaddings pt-2">
+  <section className="yPaddings pt-2 bg-brand">
     <motion.div
       variants={staggerContainer(0.25, 0.25)}
       initial="hidden"

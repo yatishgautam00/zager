@@ -14,13 +14,14 @@ export default function Home() {
       <Hero />
       <About />
       <OurService />
-      <div className="flex flex-col gap-5 md:gap-8 lg:gap-10 pb-10">
+      <div className="flex flex-col gap-5 md:gap-8 lg:gap-10 pb-10" >
+        <h2 className="text-center text-3xl font-bold sm:text-4xl">Our Platforms</h2>
       <OurInfo />
       <OurInfo2 />
       <OurInfo3 />
       {/* <OurInfo4 /> */}
       </div>
-      <div className="">
+      <div className="pt-16">
       <CompaniesScroll />
       </div>
       <ContactUs  />

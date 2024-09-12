@@ -9,7 +9,7 @@ import HowToApply from "./_components/HowToApply";
 function page() {
   return (
     <div className="space-y-14 overflow-x-hidden bg-white">
-      <LandingView heading={"CAREERS AT ZAGER DIGITAL SERVICES"} />
+      <LandingView heading={"CAREERS"} />
       <div className="bg-brand py-10">
         <JoinOurTeamText />
       </div>

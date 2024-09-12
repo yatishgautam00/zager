@@ -12,7 +12,7 @@ const DigitalMarketing = ({
   const isImageLeft = imagePosition === "left";
 
   return (
-    <section className="paddings relative z-10">
+    <section className="paddings relative z-10 bg-brand">
       <div className="gradient-02 z-0" />
       <motion.div
           variants={staggerContainer(0.25, 0.25)}
@@ -44,9 +44,9 @@ const DigitalMarketing = ({
             </div>
 
             {/* Right Side: Text Content */}
-            <div className={`w-full lg:w-7/12 bg-white p-6 text-left`}>
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">{title}</h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <div className={`w-full lg:w-7/12 p-6 shadow-md rounded-lg text-gray-200 p-6 text-left`}>
+              <h2 className="text-4xl font-bold  mb-4">{title}</h2>
+              <p className="text-lg  mb-8 leading-relaxed">
                 {description}
               </p>
 
@@ -55,7 +55,7 @@ const DigitalMarketing = ({
                 {keywords.map((item) => (
                   <button
                     key={item}
-                    className="bg-gray-100 border border-gray-300 text-gray-700 rounded-md px-4 py-2 text-center hover:bg-gray-200 transition-colors duration-300"
+                    className="text-gray-200 bg-gray-700 border border-gray-600 rounded-md px-4 py-3 text-center transition-colors duration-300 hover:bg-gray-600"
                   >
                     {item}
                   </button>

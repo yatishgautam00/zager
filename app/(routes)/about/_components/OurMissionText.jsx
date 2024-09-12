@@ -21,11 +21,11 @@ function OurMissionText() {
 
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)} 
-          className="mt-[8px] font-normal sm:text-[32px] text-lg  leading-relaxed    text-center text-white t=ext-secondary-white"
+          className="mt-[8px] font-normal sm:text-[32px] text-justify text-lg  leading-relaxed    text-center text-white t=ext-secondary-white"
         >
-          Our mission is simple yet profound: to provide top-notch digital
-          marketing and IT services that help our clients achieve their business
-          goals. Whether you&lsqu;re looking to enhance your online presence,
+         <span className="font-bold"> Our mission is simple yet profound:</span> To provide top-notch digital
+          marketing and IT Solutions that help our clients achieve their business
+          goals. Whether you're looking to enhance your online presence,
           streamline your IT infrastructure, or unlock new growth opportunities,
           we are here to make it happen with quality and dedication.
         </motion.p>

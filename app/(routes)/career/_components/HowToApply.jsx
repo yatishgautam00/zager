@@ -36,22 +36,22 @@ function HowToApply() {
                 <div className="flow-root">
                   <ul className="-m-1 flex flex-wrap">
                     <li className="p-1 leading-none">
-                      <Link href="#" className="text-xs font-medium text-gray-300">
+                      <Link href="https://www.instagram.com/zagerdigitalservices/" target="_blank" className="text-xs font-medium text-gray-300">
                         {" "}
                         Instagram{" "}
                       </Link>
                     </li>
 
                     <li className="p-1 leading-none">
-                      <Link href="#" className="text-xs font-medium text-gray-300">
+                      <Link href="https://www.linkedin.com/company/zager-digital-service/" target="_blank" className="text-xs font-medium text-gray-300">
                         {" "}
                         LinkedIn{" "}
                       </Link>
                     </li>
 
                     <li className="p-1 leading-none">
-                      <Link href="#" className="text-xs font-medium text-gray-300">
-                        Website
+                      <Link href="https://www.facebook.com/zagerdigitalservices" target="_blank" className="text-xs font-medium text-gray-300">
+                        FaceBook
                       </Link>
                     </li>
                   </ul>

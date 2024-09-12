@@ -9,7 +9,7 @@ export default function WhyWorkWithUs() {
     {
       title: "Innovative Environment",
       description:
-        "At Zager Digital Services, we thrive on innovation. Join us and work with cutting-edge technologies and strategies that are shaping the future of digital marketing and IT solutions.",
+        "At Zager Digital Services, we thrive on innovation. Join us and work with cutting-edge technologies and strategies that are shaping the future of digital marketing and IT Solutions.",
       imageUrl: "/path-to-your-image.svg", // replace with correct image
     },
     {

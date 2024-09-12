@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const OurInfo3 = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -52,7 +53,7 @@ const OurInfo3 = () => {
       >
         <h2 className="text-2xl font-bold mb-4">IRA MEDIA & PRODUCTION</h2>
         <p className="mb-4 md:w-3/5">Welcome to IRA Media and Production, where creativity meets strategy to bring your media projects to life.</p>
-        <button className="md:mt-4 border-2 rounded-lg border-white text-md px-6 py-2 ">Join Us</button>
+        <Link href={"/ira"} className="md:mt-4 border-2 rounded-lg border-white text-md px-6 py-2 " id="our-clients">Know More</Link>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ import {
   DropdownMenuLabel,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
-
+import { useRouter } from "next/navigation";
 export default function Header() {
   return (
     <div className="relative w-full flex h-[80px] items-center justify-center">
@@ -45,7 +45,7 @@ function Navbar({ className }) {
   const pathname = usePathname(); // Get the current path
   const [active, setActive] = useState(null);
   const [showLogo, setShowLogo] = useState(false);
-
+  const router = useRouter()
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -92,7 +92,7 @@ function Navbar({ className }) {
           <Link href="/about">
             <MenuItem
               setActive={setActive}
-              item="About"
+              item="About Us"
               className={cn({
                 "text-blue-500": pathname === "/about",
                 "text-white": pathname !== "/about",
@@ -156,16 +156,19 @@ function Navbar({ className }) {
               activePath={"/career"}
             />
           </Link>
-          <MenuItem setActive={setActive} active={active} item="Partner"
-          path={pathname}
-          activePath={"/partner"}
-          >
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/gyaanadari">GYAANADARI</HoveredLink>
-              <HoveredLink href="/jk-works">JK WORKS</HoveredLink>
-              <HoveredLink href="/ira">Ira Media & Productions</HoveredLink>
-            </div>
-          </MenuItem>
+          <Link href="/#our-clients">
+            <MenuItem
+              setActive={setActive}
+              item="Our Clients"
+              className={cn({
+                "text-blue-500": pathname === "/career",
+                "text-white": pathname !== "/career",
+              })}
+              path={pathname}
+              activePath={"#our-clients"}
+              
+            />
+          </Link>
         </div>
 
         {/* Mobile Menu */}
@@ -192,19 +195,19 @@ function Navbar({ className }) {
                       "text-white": pathname !== "/",
                     })}
                     path={pathname}
-              activePath={"/"}
+                    activePath={"/"}
                   />
                 </Link>
                 <Link href="/about">
                   <MenuItem
                     setActive={setActive}
-                    item="About"
+                    item="About Us"
                     className={cn({
                       "text-blue-500": pathname === "/about",
                       "text-white": pathname !== "/about",
                     })}
                     path={pathname}
-              activePath={"/about"}
+                    activePath={"/about"}
                   />
                 </Link>
                 <Link href="/services">
@@ -216,7 +219,7 @@ function Navbar({ className }) {
                       "text-white": pathname !== "/services",
                     })}
                     path={pathname}
-              activePath={"/services"}
+                    activePath={"/services"}
                   />
                 </Link>
                 <Link href="/contact">
@@ -228,7 +231,7 @@ function Navbar({ className }) {
                       "text-white": pathname !== "/contact",
                     })}
                     path={pathname}
-              activePath={"/contact"}
+                    activePath={"/contact"}
                   />
                 </Link>
                 <Link href="/contact">
@@ -240,20 +243,21 @@ function Navbar({ className }) {
                       "text-white": pathname !== "/career",
                     })}
                     path={pathname}
-              activePath={"/career"}
+                    activePath={"/career"}
                   />
                 </Link>
-
-                <DropdownMenuComponent
-                  title="Partner"
-                  links={[
-                    { href: "/gyaanadari", label: "GYAANADARI" },
-                    { href: "/ira", label: "IRA" },
-                    { href: "/jk-works", label: "JK WORKS" },
-                  ]}
-                  path={pathname}
-              activePath={"/partner1"}
-                />
+                <Link href="/#our-clients">
+                  <MenuItem
+                    setActive={setActive}
+                    item="Our Client"
+                    className={cn({
+                      "text-blue-500": pathname === "/career",
+                      "text-white": pathname !== "/career",
+                    })}
+                    path={pathname}
+              activePath={"#our-clients"}
+                  />
+                </Link>
               </div>
               <SheetFooter>
                 <SheetClose asChild>

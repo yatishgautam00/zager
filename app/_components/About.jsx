@@ -31,8 +31,8 @@ const About = () => (
               <h2 className="text-4xl font-bold sm:text-5xl">About Us</h2>
 
               <p className="mt-6 text-white text-lg md:text-xl font-thin  text-justify">
-                At Zager Digital Services, we believe that exceptional digital
-                marketing and IT solutions stem from a core commitment to
+                At Zager Digital Services, we believe that exceptional Digital
+                Marketing and IT Solutions stem from a core commitment to
                 integrity, innovation, and excellence. Founded with the mission
                 to empower businesses through cutting-edge technology and
                 strategic marketing, we take pride in delivering tailored

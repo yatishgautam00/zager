@@ -23,7 +23,7 @@ function Footer() {
               <div>
                 <p className="text-md text-white flex flex-row items-center gap-3">
                   <FaPhoneAlt className="" />{" "}
-                  <span className=" ">+91 987654321</span>
+                  <span className=" ">+91-9407655717</span>
                 </p>
               </div>
               <div>
@@ -36,8 +36,8 @@ function Footer() {
                 <p className="text-md text-white flex flex-row gap-3">
                   <FaLocationDot className="" />{" "}
                   <span className="">
-                    CSIT Campus, Shivaji Nagar , Balod Road, Durg, Chhattisgarh,
-                    491001{" "}
+                    Address- Startup Enclave, CSIT Campus, Shivaji Nagar, Balod,
+                    Road, Durg, Chhattisgarh, 491001{" "}
                   </span>
                 </p>
               </div>
@@ -58,18 +58,18 @@ function Footer() {
 
                 <li>
                   <Link href="#" className="transition hover:opacity-75">
-                    Teaching
+                    Web Development
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className=" transition hover:opacity-75">
-                    Content Creation
+                    IT Solutions
                   </Link>
                 </li>
 
                 <li>
                   <Link href="#" className="transition hover:opacity-75">
-                    Photo/Videography
+                    Designing
                   </Link>
                 </li>
               </ul>
@@ -80,26 +80,26 @@ function Footer() {
 
               <ul className="pt-3 space-y-2 text-sm">
                 <li>
-                  <Link href="#" className=" transition hover:opacity-75">
+                  <Link href="/" className=" transition hover:opacity-75">
                     {" "}
                     Home{" "}
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#" className=" transition hover:opacity-75">
+                  <Link href="/about" className=" transition hover:opacity-75">
                     {" "}
                     About Us{" "}
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#" className=" transition hover:opacity-75">
+                  <Link href="/career" className=" transition hover:opacity-75">
                     Career{" "}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" transition hover:opacity-75">
+                  <Link href="contact" className=" transition hover:opacity-75">
                     Contact Us
                   </Link>
                 </li>
@@ -111,27 +111,39 @@ function Footer() {
 
               <ul className="pt-3 space-y-2 text-sm">
                 <li>
-                  <Link href="#" className=" transition hover:opacity-75">
+                  <Link
+                    href="https://www.facebook.com/zagerdigitalservices"
+                    target="_blank"
+                    className=" transition hover:opacity-75"
+                  >
                     {" "}
                     FaceBook{" "}
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#" className=" transition hover:opacity-75">
+                  <Link
+                    href="https://www.instagram.com/zagerdigitalservices/"
+                    target="_blank"
+                    className=" transition hover:opacity-75"
+                  >
                     {" "}
                     Instagram{" "}
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#" className="transition hover:opacity-75">
+                  <Link
+                    href="https://www.linkedin.com/company/zager-digital-service/"
+                    target="_blank"
+                    className="transition hover:opacity-75"
+                  >
                     {" "}
                     LinkedIn{" "}
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="transition hover:opacity-75">
+                  <Link href="" className="transition hover:opacity-75">
                     {" "}
                     Twitter{" "}
                   </Link>
