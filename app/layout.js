@@ -16,10 +16,10 @@ export default function RootLayout({ children }) {
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content="Start your journey with Zager Digital Services since 2017" />
-        <link rel="icon" href="/logo.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
+        <link rel="icon" href="/Zlogo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/Zlogo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/Zlogo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/Zlogo.png" />
         <meta
           name="keywords"
           content="Start your journey with Zager Digital Services since 2017."
