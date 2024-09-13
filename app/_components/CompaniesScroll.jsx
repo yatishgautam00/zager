@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 const companies = [
   { src: "/logo/argo.png", alt: "logo" },
@@ -28,50 +29,17 @@ const companies = [
 ];
 
 const CompaniesScroll = () => {
-  const containerRef = useRef(null);
-  const totalWidth = useRef(0);
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (container) {
-      totalWidth.current = container.scrollWidth;
-    }
-  }, []);
+ 
 
   return (
-    <div className="relative w-full overflow-hidden bg-gray-300">
-      <motion.div
-        className="flex flex-row gap-4 md:gap-6 lg:gap-10 py-3"
-        style={{ whiteSpace: "nowrap", display: "flex" }}
-        animate={{
-          x: `-${totalWidth.current / 2}px`,
-        }}
-        transition={{
-          duration: 30,
-          ease: "linear",
-          repeat: Infinity,
-        }}
-        ref={containerRef}
-      >
-        {/* Render the original array of images */}
-        {companies.map((company, index) => (
-          <img
-            key={index}
-            src={company.src}
-            alt={company.alt}
-            className="md:h-20  md:w-32 w-20 h-16"
-          />
-        ))}
-        {/* Render the duplicate array of images for seamless transition */}
-        {companies.map((company, index) => (
-          <img
-            key={`duplicate-${index}`}
-            src={company.src}
-            alt={company.alt}
-            className="h-16 w-20 md:h-20 md:w-32"
-          />
-        ))}
-      </motion.div>
+    <div className="relative w-full overflow-hidden border-b-8 border-b-brand bg-gray-300">
+      <InfiniteMovingCards
+      items={companies}
+      direction="left"
+      speed="slow"
+      pauseOnHover={true}
+      className="my-custom-class"
+    />
     </div>
   );
 };
