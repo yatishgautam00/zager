@@ -36,7 +36,7 @@ const CompaniesScroll = () => {
       <InfiniteMovingCards
       items={companies}
       direction="left"
-      speed="slow"
+      speed="normal"
       pauseOnHover={true}
       className="my-custom-class"
     />
