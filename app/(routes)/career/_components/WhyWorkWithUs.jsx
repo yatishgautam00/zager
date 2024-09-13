@@ -50,7 +50,7 @@ export default function WhyWorkWithUs() {
             <h2 className="text-4xl font-bold text-center text-black mb-8">
               Why <span className="text-indigo-600">Work With Us?</span>
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full h-full">
               {cards.map((card, index) => (
                 <div key={index} className="flex justify-center">
                   <PlainCard

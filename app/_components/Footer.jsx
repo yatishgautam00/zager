@@ -23,13 +23,13 @@ function Footer() {
               <div>
                 <p className="text-md text-white flex flex-row items-center gap-3">
                   <FaPhoneAlt className="" />{" "}
-                  <span className=" ">+91-9407655717</span>
+                  <Link className=" " href={"tel:9407655717"}>+91-9407655717</Link>
                 </p>
               </div>
               <div>
                 <p className="text-md text-white flex flex-row items-center  gap-3">
                   <MdEmail className="" />{" "}
-                  <span className="">contact@zager.in</span>
+                  <Link className="" href={"mailto: zagerdigitalservices@gmail.com"}>contact@zager.in</Link>
                 </p>
               </div>
               <div>

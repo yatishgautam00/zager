@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/app/utils/motion";
 
 const PlainCard = ({ title, description, index }) => {
   return (
@@ -10,7 +9,7 @@ const PlainCard = ({ title, description, index }) => {
         className="card"
         initial={{
           opacity: 0,
-          // if odd index card,slide from right instead of left
+          // if odd index card, slide from right instead of left
           x: index % 2 === 0 ? 50 : -50,
         }}
         whileInView={{
@@ -22,7 +21,7 @@ const PlainCard = ({ title, description, index }) => {
         }}
         viewport={{ once: true }}
       >
-        <div className="shadow-lg rounded-lg flex flex-col justify-between bg-brand p-6 pb-0 px-0 text-center w-full lg:w-full">
+        <div className="shadow-lg rounded-lg flex flex-col justify-between bg-brand p-6 pb-0 px-0 text-center w-full lg:w-full min-h-[350px]"> {/* Set minimum height */}
           <div className="flex justify-center mb-4">
             <Image
               src="/ourServices/rocket.gif"
@@ -32,7 +31,7 @@ const PlainCard = ({ title, description, index }) => {
             />
           </div>
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
-          <div className="bg-white rounded-b-lg ">
+          <div className="bg-white rounded-b-lg flex-grow"> {/* Flex-grow ensures the card grows to fill available space */}
             <p className="text-sm text-justify rto text-gray-600 px-6 pb-6 pt-6">
               {description}
             </p>

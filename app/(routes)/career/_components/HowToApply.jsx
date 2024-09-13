@@ -69,7 +69,7 @@ function HowToApply() {
             <ul className="mt-4 space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="mailto: zagerdigitalservices@gmail.com"
                   className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600"
                 >
                   <strong className="font-medium text-white">
@@ -86,7 +86,7 @@ function HowToApply() {
 
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600"
                 >
                   <strong className="font-medium text-white">
@@ -97,7 +97,7 @@ function HowToApply() {
                     At Zager Digital Services, we celebrate diversity and are
                     committed to creating an inclusive workplace where everyone
                     feels valued and respected. We encourage candidates from all
-                    backgrounds to apply. 
+                    backgrounds to apply.
                   </p>
                 </Link>
               </li>

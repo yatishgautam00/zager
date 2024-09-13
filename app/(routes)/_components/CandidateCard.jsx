@@ -33,7 +33,7 @@ const CandidateCard = ({
           {title}
         </h3>
       ) : (
-        <div className="md:absolute relative bottom-0 p-8 justify-start w-full flex flex-col md:bg-[rgba(0,0,0,0.5)] bg-[rgba(0,0,0,0.8)] rounded-[23px] md:rounded-none rounded-b-[23px]">
+        <div className="md:absolute relative bottom-0 p-8 justify-start w-full flex flex-col md:bg-[rgba(0,0,0,0.5)] bg-[rgba(0,0,0,0.8)]  md:rounded-t-none rounded-b-[23px] rounded-[23px]">
           {/* <div className="flexCenter w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]">
         <Image
           src="/headset.svg"
