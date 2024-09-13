@@ -156,9 +156,9 @@ function Footer() {
 
               <ul className="pt-3 space-y-2 text-sm">
                 <li>
-                  <Link href="/gyaandari" className=" transition hover:opacity-75">
+                  <Link href="/gyaanadari" className=" transition hover:opacity-75">
                     {" "}
-                    Gyaandari{" "}
+                    Gyaanadari{" "}
                   </Link>
                 </li>
 
