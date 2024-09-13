@@ -13,9 +13,9 @@ function ContactUs() {
         <div className="flex flex-col justify-start space-y-3">
           <div>
             <h2 className="text-3xl font-semibold">Connect With Us</h2>
-            <p className=" text-gray-200">
+            {/* <p className=" text-gray-200">
             It&lsquo;s All About Vales 
-            </p>
+            </p> */}
           </div>
           <div>
             <p className=" text-gray-200 flex flex-row gap-2 items-center"><FaPhoneAlt/> <Link href={"tel:9407655717"}> +91-9407655717</Link> </p>

@@ -16,7 +16,8 @@ function Footer() {
             </div>
 
             <p className=" text-xs pt-1 text-white">
-              Expert Digital Solutions Tailored to Your Needs.
+            It&lsquo;s All About Vales 
+
             </p>
 
             <div className="flex flex-col pt-6 text-sm gap-5 w-full">
@@ -147,6 +148,33 @@ function Footer() {
                     Twitter{" "}
                   </Link>
                 </li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="font-bold text-lg ">Our Platform</p>
+
+              <ul className="pt-3 space-y-2 text-sm">
+                <li>
+                  <Link href="/gyaandari" className=" transition hover:opacity-75">
+                    {" "}
+                    Gyaandari{" "}
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/jk-works" className=" transition hover:opacity-75">
+                    {" "}
+                    JK Works{" "}
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/ira" className=" transition hover:opacity-75">
+                  Ira Media & Productions{" "}
+                  </Link>
+                </li>
+             
               </ul>
             </div>
           </div>

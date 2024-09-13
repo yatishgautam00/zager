@@ -31,7 +31,7 @@ const AboutUsText = () => (
           <span className="font-normal text-white">
             integrity, innovation, and excellence.
           </span>
-          Founded with the mission to empower businesses through cutting-edge
+          &nbsp;Founded with the mission to empower businesses through cutting-edge
           technology and strategic marketing, we take pride in delivering
           tailored solutions that drive growth and success.
         </span>

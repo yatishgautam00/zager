@@ -39,6 +39,11 @@ const services = [
     heading: "Tony Wayne",
     imageUrl: "/ourServices/3.png",
   },
+  {
+    title: "influencer marketing",
+    heading: "Tony Wayne",
+    imageUrl: "/ourServices/8.jpg",
+  },
   // Add more service objects here
 ];
 
@@ -108,7 +113,7 @@ function OurServiceCard() {
               </div>
             </div>
           </Link>
-          <h2 className="text-center text-2xl font-medium">{service.title}</h2>
+          <h2 className="text-center text-2xl font-medium uppercase">{service.title}</h2>
         </div>
       ))}
     </div>

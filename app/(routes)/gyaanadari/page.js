@@ -11,7 +11,7 @@ import EndingPageCard from "../_components/EndingPageCard";
 function page() {
 
   return (
-    <div className="flex bg-white   overflow-hidden flex-col   ">
+    <div className="flex bg-white  space-y-6 overflow-hidden flex-col   ">
       <LandingView heading={"GYAANADRI"} msg={"Clear vision & Pure thoughts"} />
       <AboutUsG content={aboutUsOfGyan}/>
       <OurMissionGlobal content={ourMissionOfGyan} />

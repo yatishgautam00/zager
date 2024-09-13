@@ -25,17 +25,18 @@ function OurMissionGlobal({ content }) {
           >
             <motion.div
               variants={slideIn("right", "tween", 0.2, 1)}
-              className=""
+              className="bg-brand"
             >
-              <div className="relative flex items-center bg-gray-100">
-                <span className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
+              <div className="relative flex items-center -gray-100">
+                <span className="hidden lg:absolute lg:inset-y-0 lg:-start-16 
+                lg:block lg:w-16 lg:bg-brand"></span>
 
                 <div className="p-8 sm:p-16 lg:p-24">
-                  <h2 className="text-2xl font-bold text-black sm:text-3xl">
+                  <h2 className="text-2xl font-bold  sm:text-3xl">
                     OUR MISSION
                   </h2>
 
-                  <p className="mt-4 text-gray-600">{content}</p>
+                  <p className="mt-4 text-gray-200 text-justify">{content}</p>
 
                   <a
                     href="#"
