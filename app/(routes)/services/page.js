@@ -5,10 +5,16 @@ import DesigningSection from "./_components/DesigningSection";
 import {
   DigitalMarketingButtons,
   DigitalMarketingButtons01,
+  WebsiteDevelopmentButtons,
+  ItSolutionsButtons,
+  DesigningButtons,
+  ContentCreationButtons,
+  MediaProductionButtons,
+  ArchitectureButtons
 } from "@/app/constants";
 function page() {
   return (
-    <div className="overflow-hidden  lg:space-y-6  bg-white">
+    <div className="overflow-hidden  pb-5 md:pb-10 space-y-6  bg-white">
       <LandingView heading={"OUR SERVICES"} />
 
       <DigitalMarketing
@@ -22,7 +28,7 @@ function page() {
       <DesigningSection
         title="WEBSITE DEVLOPMENT"
         description="The process of building and maintaining websites, involving tasks such as web design, coding, content creation, and server configuration to ensure functionality, user experience, and performance."
-        buttons={DigitalMarketingButtons}
+        buttons={WebsiteDevelopmentButtons}
         imagePosition="left"
       />
 
@@ -30,34 +36,34 @@ function page() {
         imageSrc="/pana4.png" // Dynamic image
         title="IT SOLUTION AND SEVICES" // Dynamic title
         description="Support and technologies for software, networks, and tech issues to improve efficiency and address challenges." // Dynamic description
-        keywords={DigitalMarketingButtons01} // Dynamic keywords
+        keywords={ItSolutionsButtons} // Dynamic keywords
         imagePosition="right"
       />
       <DesigningSection
         title="Designing"
         description="The process of creating plans, concepts, and aesthetics for various projects, including graphics, products, and user experiences, to meet specific needs and objectives."
-        buttons={DigitalMarketingButtons}
+        buttons={DesigningButtons}
         imagePosition="right"
       />
       <DigitalMarketing
         imageSrc="/pana.png" // Dynamic image
         title="CONTENT CREATION" // Dynamic title
         description="The process of generating engaging and valuable content in various formats  to attract and retain  audience, support marketing goals, and establish a brand's online presence." // Dynamic description
-        keywords={DigitalMarketingButtons01} // Dynamic keywords
+        keywords={ContentCreationButtons} // Dynamic keywords
         imagePosition="right"
       />
       <DigitalMarketing
         imageSrc="/pana3.png" // Dynamic image
         title="Media Production" // Dynamic title
         description="The process of creating content for various media platforms, encompassing all stages from concept development to final editing and distribution." // Dynamic description
-        keywords={DigitalMarketingButtons01} // Dynamic keywords
+        keywords={MediaProductionButtons} // Dynamic keywords
         imagePosition="left"
       />
       <DigitalMarketing
         imageSrc="/pana2.png" // Dynamic image
         title="ARCHITECTURE" // Dynamic title
         description="The art and science of designing and constructing buildings and other structures, focusing on aesthetics, functionality, and sustainability." // Dynamic description
-        keywords={DigitalMarketingButtons01} // Dynamic keywords
+        keywords={ArchitectureButtons} // Dynamic keywords
         imagePosition="right"
       />
     </div>

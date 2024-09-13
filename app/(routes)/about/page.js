@@ -10,7 +10,7 @@ import Insights from "./_components/Insights";
 import { startingFeatures } from "@/app/constants";
 function page() {
   return (
-    <main className="bg-primary-black overflow-hidden flex flex-col gap-14">
+    <main className="bg-primary-black pb-5 md:pb-10 overflow-hidden flex flex-col gap-14">
       {/* <Hero /> */}
       <div className="pt-24 px-14">
         <AboutUsText />

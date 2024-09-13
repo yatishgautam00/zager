@@ -51,7 +51,7 @@ const OurInfo = () => {
         )}
         style={{ width: "50%" }}
       >
-        <h2 className="text-2xl font-bold mb-4">Gyaanadari</h2>
+        <h2 className="text-2xl font-bold uppercase mb-4">Gyaanadari</h2>
         <p className="mb-4 md:w-3/5">Welcome to Gyaandari, your premier destination for insightful content and engaging media.</p>
         <Link className="md:mt-4 border-2 rounded-lg border-white text-md px-6 py-2 " href={"/gyaanadari"}>Know More</Link>
       </div>

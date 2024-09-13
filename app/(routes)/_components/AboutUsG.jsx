@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { TypingText } from "@/app/_components/CustomText";
 import { fadeIn, staggerContainer } from "@/app/utils/motion";
 
-const AboutUsG = ({content}) => (
+const AboutUsG = ({ content }) => (
   <section className="paddings relative z-10  text-brand px-4 md:px-10 py-10 lg:py-10">
     <div className="gradient-02 z-0" />
     <motion.div
@@ -23,10 +23,7 @@ const AboutUsG = ({content}) => (
         className="mt-[8px] font-normal md:text-xl text-lg text-center text-brand text-secondary-white"
       >
         <span className="flex flex-col">
-
-          <span className="">
-            {content}
-          </span>
+          <span className="">{content}</span>
         </span>
       </motion.p>
     </motion.div>

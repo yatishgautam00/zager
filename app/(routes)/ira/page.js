@@ -15,7 +15,7 @@ import WhyChooseUs from "../_components/WhyChooseUs";
 
 function page() {
   return (
-    <div className="overflow-hidden  lg:space-y-6 bg-white">
+    <div className="overflow-hidden  pb-5 md:pb-10 lg:space-y-6 bg-white">
       <LandingView
         heading={"IRA MEDIA & PRODUCTIONS"}
         msg={"Clear vision & Pure thoughts"}

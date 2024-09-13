@@ -1,12 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  slideIn,
-  fadeIn,
-  staggerContainer,
-  textVariant,
-} from "@/app/utils/motion";
+import { slideIn, fadeIn, staggerContainer, textVariant } from "@/app/utils/motion";
 import Link from "next/link";
 function HowToApply() {
   return (
@@ -36,21 +31,33 @@ function HowToApply() {
                 <div className="flow-root">
                   <ul className="-m-1 flex flex-wrap">
                     <li className="p-1 leading-none">
-                      <Link href="https://www.instagram.com/zagerdigitalservices/" target="_blank" className="text-xs font-medium text-gray-300">
+                      <Link
+                        href="https://www.instagram.com/zagerdigitalservices/"
+                        target="_blank"
+                        className="text-xs font-medium text-gray-300"
+                      >
                         {" "}
                         Instagram{" "}
                       </Link>
                     </li>
 
                     <li className="p-1 leading-none">
-                      <Link href="https://www.linkedin.com/company/zager-digital-service/" target="_blank" className="text-xs font-medium text-gray-300">
+                      <Link
+                        href="https://www.linkedin.com/company/zager-digital-service/"
+                        target="_blank"
+                        className="text-xs font-medium text-gray-300"
+                      >
                         {" "}
                         LinkedIn{" "}
                       </Link>
                     </li>
 
                     <li className="p-1 leading-none">
-                      <Link href="https://www.facebook.com/zagerdigitalservices" target="_blank" className="text-xs font-medium text-gray-300">
+                      <Link
+                        href="https://www.facebook.com/zagerdigitalservices"
+                        target="_blank"
+                        className="text-xs font-medium text-gray-300"
+                      >
                         FaceBook
                       </Link>
                     </li>
@@ -65,10 +72,14 @@ function HowToApply() {
                   href="#"
                   className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600"
                 >
-                  <strong className="font-medium text-white">Ready to take the next step in your career?</strong>
+                  <strong className="font-medium text-white">
+                    Ready to take the next step in your career?
+                  </strong>
 
                   <p className="mt-1 text-xs font-medium text-gray-300">
-                  Submit your resume to zagerdigitalsservices@gmail.com. Be sure to highlight why you would be a great fit for Zager Digital Services.
+                    Submit your resume to zagerdigitalsservices@gmail.com. Be
+                    sure to highlight why you would be a great fit
+                    for Zager Digital Services.
                   </p>
                 </Link>
               </li>
@@ -78,10 +89,15 @@ function HowToApply() {
                   href="#"
                   className="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600"
                 >
-                  <strong className="font-medium text-white">DIVERSITY AND INCLUSION</strong>
+                  <strong className="font-medium text-white">
+                    DIVERSITY AND INCLUSION
+                  </strong>
 
                   <p className="mt-1 text-xs font-medium text-gray-300">
-                  At Zager Digital Services, we celebrate diversity and are committed to creating an inclusive workplace where everyone feels valued and respected. We encourage candidates from all backgrounds to apply. 
+                    At Zager Digital Services, we celebrate diversity and are
+                    committed to creating an inclusive workplace where everyone
+                    feels valued and respected. We encourage candidates from all
+                    backgrounds to apply. 
                   </p>
                 </Link>
               </li>

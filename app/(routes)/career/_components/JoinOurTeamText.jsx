@@ -23,15 +23,17 @@ const JoinOurTeamText = () => (
         className="mt-[8px] font-normal md:text-xl text-lg text-center text-white text-secondary-white"
       >
         <span className="flex flex-col">
-        <span className="font-extrabold text-white">
-          Are you passionate about digital marketing and IT solutions?
-        </span>{" "}
-        <span className="">
-        At Zager Digital Services, we are always on the lookout for talented
-        individuals who are eager to innovate and drive success. As a leader in
-        the industry, we offer a dynamic work environment where creativity,
-        collaboration, and professional growth are at the forefront of
-        everything we do.</span></span>
+          <span className="font-extrabold text-white">
+            Are you passionate about digital marketing and IT solutions?
+          </span>{" "}
+          <span className="">
+            At Zager Digital Services, we are always on the lookout for talented
+            individuals who are eager to innovate and drive success. As a leader
+            in the industry, we offer a dynamic work environment where
+            creativity, collaboration, and professional growth are at the
+            forefront of everything we do.
+          </span>
+        </span>
       </motion.p>
       {/* <motion.div variants={fadeIn("up", "tween", 0.3, 1)}>
         <Link

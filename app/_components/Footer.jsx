@@ -36,8 +36,7 @@ function Footer() {
                 <p className="text-md text-white flex flex-row gap-3">
                   <FaLocationDot className="" />{" "}
                   <span className="">
-                    Address- Startup Enclave, CSIT Campus, Shivaji Nagar, Balod,
-                    Road, Durg, Chhattisgarh, 491001{" "}
+                  Startup Enclave, CSIT Campus, Shivaji Nagar, Balod Road, Durg, Chhattisgarh 491001
                   </span>
                 </p>
               </div>

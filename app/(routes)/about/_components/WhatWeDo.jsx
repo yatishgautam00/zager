@@ -6,7 +6,7 @@ import { TitleText, TypingText } from "@/app/_components/CustomText";
 import StartSteps from "@/app/_components/StartSteps";
 import { staggerContainer, fadeIn, planetVariants } from "@/app/utils/motion";
 import { newFeatures } from "@/app/constants";
-import NewFeatures from "@/app/_components/NewFeatures";
+// import NewFeatures from "@/app/_components/NewFeatures";
 
 const WhatsNew = () => (
   <section className="paddings relative z-10">
@@ -22,10 +22,18 @@ const WhatsNew = () => (
         className="flex-[0.75] flex justify-center flex-col"
       >
         <TypingText title="| What We Do" textStyles={""} />
-        <TitleText title={<>WHAT WE DO?</>} />
+        <TitleText
+          title={
+            <div className="md:text-5xl text-3xl">
+              Comprehensive Digital Solutions
+            </div>
+          }
+        />
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
           {newFeatures.map((feature) => (
-            <p key={feature} className="text-justify text-sm md:text-lg">{feature.subtitle}</p>
+            <p key={feature} className="text-justify text-sm md:text-lg">
+              {feature.subtitle}
+            </p>
           ))}
         </div>
       </motion.div>

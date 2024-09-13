@@ -32,7 +32,8 @@ const WhyChooseUs = ({ reasons }) => {
             <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
               <div className="max-w-xl">
                 <h2 className="text-3xl font-bold sm:text-4xl">
-                  <span className="font-thin">WHY CHOOSE </span>{getTitle()}
+                  <span className="font-thin">WHY CHOOSE </span>
+                  {getTitle()}
                 </h2>
               </div>
 

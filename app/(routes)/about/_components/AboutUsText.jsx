@@ -20,23 +20,27 @@ const AboutUsText = () => (
 
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] items-center text-justify flex flex-col text-[20px] text-center text-white text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[32px] items-center text-justify flex flex-col text-[20px]  text-white text-secondary-white"
       >
-        <span className="font-extrabold text-white">
+        <span className="font-extrabold md:text-4xl pb-4 pt-2 text-4xl  text-white">
           Welcome to Zager Digital Services!
         </span>{" "}
-        <span>
-        At Zager Digital Services, we believe that exceptional digital
-        marketing and IT solutions stem from a core commitment to&nbsp;
-        <span className="font-extrabold text-white">
-          integrity, innovation, and excellence.
+        <span className="font-thin">
+          At Zager Digital Services, we believe that exceptional digital
+          marketing and IT solutions stem from a core commitment to&nbsp;
+          <span className="font-normal text-white">
+            integrity, innovation, and excellence.
+          </span>
+          Founded with the mission to empower businesses through cutting-edge
+          technology and strategic marketing, we take pride in delivering
+          tailored solutions that drive growth and success.
         </span>
-        Founded with the mission to empower businesses through cutting-edge
-        technology and strategic marketing, we take pride in delivering tailored
-        solutions that drive growth and success.</span>
       </motion.p>
       <motion.div variants={fadeIn("up", "tween", 0.3, 1)}>
-        <Link href="#ourmission" className="w-full flex items-center justify-center">
+        <Link
+          href="#ourmission"
+          className="w-full flex items-center justify-center"
+        >
           <Image
             src="/arrow-down.svg"
             width={18}

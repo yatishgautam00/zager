@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import { TypingText } from "@/app/_components/CustomText";
 import { fadeIn, staggerContainer } from "@/app/utils/motion";
 
-const EndingPageCard = ({content, title}) => (
-  <section className="paddings relative z-10 pb-8 text-brand">
+const EndingPageCard = ({ content, title }) => (
+  <section className="paddings relative z-10 pb-8 px-4 md:px-8 lg:px-10  text-brand">
     <div className="gradient-02 z-0" />
     <motion.div
       variants={staggerContainer(0.25, 0.25)}
@@ -24,7 +24,6 @@ const EndingPageCard = ({content, title}) => (
       >
         {content}
       </motion.p>
-
     </motion.div>
   </section>
 );

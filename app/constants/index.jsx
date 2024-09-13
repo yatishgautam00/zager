@@ -7,7 +7,7 @@ export const startingFeatures = [
 export const newFeatures = [
   {
     subtitle:
-      "Zager Digital Services specializes in a comprehensive range of digital marketing and IT solutions. From developing compelling digital strategies, managing effective marketing campaigns, optimizing IT systems, and providing reliable tech support, our team is equipped to handle all your needs. Our holistic approach ensures that every aspect of your digital and IT presence is aligned with your business objectives.",
+      "Zager Digital Services specializes in a comprehensive range of Digital Marketing and IT Solutions. From developing compelling digital strategies, managing effective marketing campaigns, optimizing IT systems, and providing reliable tech support, our team is equipped to handle all your needs. Our holistic approach ensures that every aspect of your Digital and IT presence is aligned with your business objectives.",
   },
 ];
 export const insights = [
@@ -131,7 +131,7 @@ export const whatWeDoJK = [
 ];
 
 export const ourValuesOfJK = [
-  "Creativity : We embrace creativity and innovation in every project, pushing boundaries to create unique and inspiring designs.",
+  "Creativity: We embrace creativity and innovation in every project, pushing boundaries to create unique and inspiring designs.",
   "Quality: We are committed to the highest standards of quality in both design and construction, ensuring that every project meets our rigorous standards.",
   "Collaboration:  We believe in the power of collaboration. By working closely with our clients and partners, we ensure that every project reflects your vision and meets your expectations.",
   "Sustainability: We incorporate sustainable practices and materials into our designs to create eco-friendly spaces that contribute to a healthier environment.",
@@ -177,7 +177,7 @@ export const whatWeDoira = [
 ];
 
 export const ourValuesOfira = [
-  "Creativity : We embrace creativity and innovation in every project, striving to deliver unique and impactful content that stands out.",
+  "Creativity: We embrace creativity and innovation in every project, striving to deliver unique and impactful content that stands out.",
   "Quality: We are committed to the highest standards of quality in all aspects of our work, from production to strategy.",
   "Collaboration:   We believe in the power of collaboration. By working closely with our clients, we ensure that their vision is realized and their goals are achieved.",
   "Sustainability: We operate with transparency and honesty, building trust through our professional conduct and reliable service.",
@@ -255,7 +255,6 @@ export const WhyChooseUsJK = [
   },
 ];
 
-
 export const WhyChooseUsira = [
   {
     title: "Expertise",
@@ -329,40 +328,129 @@ export const WhyChooseUsira = [
 ];
 
 export const DigitalMarketingButtons = [
-  'Logo Works',
-  'Web Design',
-  'UI/UX',
-  'Product Design',
-  'Brochure And Package Design',
-  'Social Media Design',
-  'Typography',
-  '3D Design',
-  'Flyer Design',
-  'Graphic Design',
-  'Business Card',
-  'Motion Design',
-  'Bookcover',
-  'Advertising',
-  'Illustration',
-  'Brand Identity',
-  'Wordpress And Shopify Website',
+  "Logo Works",
+  "Web Design",
+  "UI/UX",
+  "Product Design",
+  "Brochure And Package Design",
+  "Social Media Design",
+  "Typography",
+  "3D Design",
+  "Flyer Design",
+  "Graphic Design",
+  "Business Card",
+  "Motion Design",
+  "Bookcover",
+  "Advertising",
+  "Illustration",
+  "Brand Identity",
+  "Wordpress And Shopify Website",
 ];
 
-
 export const DigitalMarketingButtons01 = [
-  'Content Marketing',
-  'Website Marketing',
-  'Social Media Marketing',
-  'SEO',
-  'Paid Search',
-  'Affiliate Marketing',
-  'Search Engine',
-  'Branding',
-  'Data Analytics',
-  'Analytics',
-  'Influencer Marketing',
-  'Pay-Per-Click',
-  'Conversion Rate Optimization',
-  'Email Marketing',
-  'Social Media Management',
+  "Content Marketing",
+  "Website Marketing",
+  "Social Media Marketing",
+  "SEO",
+  "Paid Search",
+  "Affiliate Marketing",
+  "Search Engine",
+  "Branding",
+  "Data Analytics",
+  "Analytics",
+  "Influencer Marketing",
+  "Pay-Per-Click",
+  "Conversion Rate Optimization",
+  "Email Marketing",
+  "Social Media Management",
+];
+
+export const WebsiteDevelopmentButtons = [
+  "Static Website",
+  "Mobile Web And Ecommerce Devlopment",
+  "Dynamic Website",
+  "Content Management System",
+  "Progressive Web App Devlopment",
+  "Single Page Application",
+  "API Devlopment",
+  "Database Devlopment",
+  "Web Application Security",
+  "Website Maintenance",
+  "Support And Many More",
+];
+
+export const ItSolutionsButtons = [
+  "Consulting Services",
+  "Software Devlopment And Integration",
+  "Cyber Security Services",
+  "Network Services",
+  "Data Management And Analytics",
+  "IT Training And Education",
+  "Vendor Management Services",
+  "Project Management Services",
+  "Mobile App Devlopment",
+  "IT Support And Help Desk",
+  "Managed IT Services",
+  "Cloud Services",
+  "Software Devlopment And Integration",
+  "IT Infrastructure And Digital Services",
+];
+
+export const DesigningButtons = [
+  "Logo Works",
+  "Web Design",
+  "UI/UX",
+  "Product Design",
+  "Brochure And Package Design",
+  "Social Media Design",
+  "Typography",
+  "3D Design",
+  "Flyer Design",
+  "Graphic Design",
+  "Business Card",
+  "Motion Design",
+  "Bookcover",
+  "Advertising",
+  "Illustration",
+  "Brand Identity",
+  "Wordpress And Shopify Website",
+];
+
+export const ContentCreationButtons = [
+  "Copywriting",
+  "Blog Writing",
+  "Video Production",
+  "Podcast Production",
+  "Content Strategy Devlopment",
+  "SEO Content",
+  "Script Writing",
+  "Email Newsletter Creation",
+  "Content Management",
+  "Video Editing",
+  "Business Card",
+  "News Cover And Production",
+  "Magazine Writing",
+  "Informative Content",
+];
+export const MediaProductionButtons = [
+  "Film And Video Production",
+  "Digital Media And Photography",
+  "Social Media Management",
+  "Graphic Design Services",
+  "Content Strategy And Devlopment",
+  "Media Consulting And Research",
+  "Event Production And Management",
+];
+export const ArchitectureButtons = [
+  "Project Management",
+  "Urban Design",
+  "Sustainable Design And Green Building",
+  "Construction Document",
+  "Interior Design",
+  "Master And Site Planning",
+  "Architecture Design",
+  "Management of Building",
+  "Design And Planning",
+  "Visualization",
+  "Building Information Modeling"
 ];

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -10,19 +10,14 @@ const services = [
     imageUrl: "/ourServices/1.png",
   },
   {
-    title: "Content Creation",
+    title: "Web Development",
     heading: "Tony Wayne",
-    imageUrl: "/ourServices/2.png",
+    imageUrl: "/ourServices/6.png",
   },
   {
-    title: "Architecture",
+    title: "IT Solutions",
     heading: "Tony Wayne",
-    imageUrl: "/ourServices/3.png",
-  },
-  {
-    title: "Media Production",
-    heading: "Tony Wayne",
-    imageUrl: "/ourServices/4.png",
+    imageUrl: "/ourServices/7.png",
   },
   {
     title: "Designing",
@@ -30,14 +25,19 @@ const services = [
     imageUrl: "/ourServices/5.png",
   },
   {
-    title: "Web Development",
+    title: "Content Creation",
     heading: "Tony Wayne",
-    imageUrl: "/ourServices/6.png",
+    imageUrl: "/ourServices/2.png",
   },
   {
-    title: "IT Solution",
+    title: "Media Production",
     heading: "Tony Wayne",
-    imageUrl: "/ourServices/7.png",
+    imageUrl: "/ourServices/4.png",
+  },
+  {
+    title: "Architecture",
+    heading: "Tony Wayne",
+    imageUrl: "/ourServices/3.png",
   },
   // Add more service objects here
 ];
@@ -94,7 +94,9 @@ function OurServiceCard() {
                 src={service.imageUrl}
                 className={cn(
                   "h-full w-full object-cover transition-transform duration-500",
-                  flipped.includes(index) ? "zoom-effect" : "group-hover:scale-105 zoom-effect group-hover:opacity-50"
+                  flipped.includes(index)
+                    ? "zoom-effect"
+                    : "group-hover:scale-105 zoom-effect group-hover:opacity-50"
                 )}
               />
 

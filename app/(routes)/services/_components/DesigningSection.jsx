@@ -42,7 +42,7 @@ const DesigningSection = ({ buttons, title, description, imagePosition }) => {
                 isButtonsLeft ? "lg:order-2" : "lg:order-1"
               } bg-gray-700 p-6 shadow-md rounded-lg text-gray-200`}
             >
-              <h2 className="text-4xl font-semibold mb-4">{title}</h2>
+              <h2 className="text-4xl font-semibold mb-4 uppercase">{title}</h2>
               <p className="text-lg leading-relaxed">{description}</p>
               <div className="mt-6">
                 <button className="bg-white text-gray-800 rounded-md px-5 py-2 hover:bg-gray-100 transition-all">

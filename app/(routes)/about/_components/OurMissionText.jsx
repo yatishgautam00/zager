@@ -8,7 +8,7 @@ import { fadeIn, staggerContainer } from "@/app/utils/motion";
 
 function OurMissionText() {
   return (
-    <section className="paddings relative z-10 text-white" >
+    <section className="paddings relative z-10 text-white">
       <div className="gradient-02 z-0" />
       <motion.div
         variants={staggerContainer(0.25, 0.25)}
@@ -20,14 +20,20 @@ function OurMissionText() {
         <TypingText title="| OUR MISSION" textStyles="text-center" />
 
         <motion.p
-          variants={fadeIn("up", "tween", 0.2, 1)} 
-          className="mt-[8px] font-normal sm:text-[32px] text-justify text-lg  leading-relaxed    text-center text-white t=ext-secondary-white"
+          variants={fadeIn("up", "tween", 0.2, 1)}
+          className="mt-[8px] font-normal sm:text-[32px] text-justify text-lg  leading-relaxed     text-white t=ext-secondary-white"
         >
-         <span className="font-bold"> Our mission is simple yet profound:</span> To provide top-notch digital
-          marketing and IT Solutions that help our clients achieve their business
-          goals. Whether you are looking to enhance your online presence,
-          streamline your IT infrastructure, or unlock new growth opportunities,
-          we are here to make it happen with quality and dedication.
+          <span className="font-bold text-4xl">
+            {" "}
+            Our mission is simple yet profound:
+          </span>{" "}
+          <span className="font-thin">
+            To provide top-notch digital marketing and IT Solutions that help
+            our clients achieve their business goals. Whether you are looking to
+            enhance your online presence, streamline your IT infrastructure, or
+            unlock new growth opportunities, we are here to make it happen with
+            quality and dedication.
+          </span>
         </motion.p>
         <motion.div variants={fadeIn("up", "tween", 0.3, 1)}>
           <Link

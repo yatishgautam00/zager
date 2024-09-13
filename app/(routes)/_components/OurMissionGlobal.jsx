@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { slideIn, staggerContainer, textVariant } from "@/app/utils/motion";
-function OurMissionGlobal({content}) {
+function OurMissionGlobal({ content }) {
   return (
     <section>
       <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
@@ -35,9 +35,7 @@ function OurMissionGlobal({content}) {
                     OUR MISSION
                   </h2>
 
-                  <p className="mt-4 text-gray-600">
-                   {content}
-                  </p>
+                  <p className="mt-4 text-gray-600">{content}</p>
 
                   <a
                     href="#"

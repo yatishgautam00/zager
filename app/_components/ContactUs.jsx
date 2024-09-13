@@ -2,6 +2,7 @@ import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import Link from "next/link";
 
 function ContactUs() {
 
@@ -13,18 +14,18 @@ function ContactUs() {
           <div>
             <h2 className="text-3xl font-semibold">Connect With Us</h2>
             <p className=" text-gray-200">
-              Expert Digital Solutions Tailored to Your Needs.
+            It&lsquo;s All About Vales 
             </p>
           </div>
           <div>
-            <p className=" text-gray-200 flex flex-row gap-2 items-center"><MdEmail/>   +91-9407655717</p>
+            <p className=" text-gray-200 flex flex-row gap-2 items-center"><FaPhoneAlt/> <Link href={"tel:9407655717"}> +91-9407655717</Link> </p>
           </div>
           <div>
-            <p className=" text-gray-200 flex flex-row gap-2 items-center"><FaPhoneAlt/>contact@zager.in</p>
+            <p className=" text-gray-200 flex flex-row gap-2 items-center"><MdEmail/> <Link href={"mailto: zagerdigitalservices@gmail.com"}>contact@zager.in</Link></p>
           </div>
           <div>
-            <p className=" text-gray-200 flex flex-row gap-1 items-start"><FaLocationDot className=" text-xl"/> 
-            Address- Startup Enclave, CSIT Campus, Shivaji Nagar, Balod, Road, Durg, Chhattisgarh, 491001
+            <p className=" text-gray-200 flex flex-row gap-2 items-start"><FaLocationDot className=" text-xl mt-1"/> 
+            Startup Enclave, CSIT Campus, Shivaji Nagar, Balod Road, Durg, Chhattisgarh 491001
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {  TitleText, TypingText } from "@/app/_components/CustomText";
+import { TitleText, TypingText } from "@/app/_components/CustomText";
 import { staggerContainer } from "@/app/utils/motion";
 import { insights } from "@/app/constants";
 import InsightCard from "@/app/_components/InsightCard";
