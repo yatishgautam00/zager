@@ -234,7 +234,7 @@ function Navbar({ className }) {
                     activePath={"/contact"}
                   />
                 </Link>
-                <Link href="/contact">
+                <Link href="/career">
                   <MenuItem
                     setActive={setActive}
                     item="Career"

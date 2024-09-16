@@ -8,6 +8,7 @@ import {
   staggerContainer,
   textVariant,
 } from "@/app/utils/motion";
+import Link from "next/link";
 
 const About = () => (
   <section className="bg-white bg-opacity-5 overflow-x-hidden pt-2">
@@ -39,9 +40,9 @@ const About = () => (
                 solutions that drive growth and success.
               </p>
 
-              <button className="border-4 mt-5 w-max px-10 text-lg hover:border-brand hover:bg-white hover:text-brand transition ease-in-out py-2 rounded-lg">
+              <Link href={"/about"} className="border-4 mt-5 w-max px-10 text-lg hover:border-brand hover:bg-white hover:text-brand transition ease-in-out py-2 rounded-lg">
                 Know More
-              </button>
+              </Link >
             </div>
           </motion.div>
         </motion.div>

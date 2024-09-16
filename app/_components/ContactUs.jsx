@@ -1,80 +1,55 @@
 import React from "react";
-import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
-import Link from "next/link";
 
 function ContactUs() {
-
   return (
-    <div className="flex items-center justify-center pt-10 pb-10 bg-gray-300">
-      <div className="grid md:grid-cols-2 gap-6 text-white rounded-lg p-8 w-full max-w-4xl bg-brand shadow-md">
-        {/* Contact Details Section */}
-        <div className="flex flex-col justify-start space-y-3">
-          <div>
-            <h2 className="text-3xl font-semibold">Connect With Us</h2>
-            {/* <p className=" text-gray-200">
-            It&lsquo;s All About Vales 
-            </p> */}
-          </div>
-          <div>
-            <p className=" text-gray-200 flex flex-row gap-2 items-center"><FaPhoneAlt/> <Link href={"tel:9407655717"}> +91-9407655717</Link> </p>
-          </div>
-          <div>
-            <p className=" text-gray-200 flex flex-row gap-2 items-center"><MdEmail/> <Link href={"mailto: zagerdigitalservices@gmail.com"}>contact@zager.in</Link></p>
-          </div>
-          <div>
-            <p className=" text-gray-200 flex flex-row gap-2 items-start"><FaLocationDot className=" text-xl mt-1"/> 
-            Startup Enclave, CSIT Campus, Shivaji Nagar, Balod Road, Durg, Chhattisgarh 491001
-            </p>
-          </div>
-        </div>
+    <div className="flex items-center justify-center pt-10 pb-10 md:bg-gray-300">
+      <div className="flex flex-col items-center text-white rounded-lg p-8 w-full max-w-4xl bg-brand shadow-md">
+        {/* Contact Heading */}
+        <h2 className="text-3xl font-semibold mb-6">Connect With Us</h2>
 
         {/* Input Form Section */}
-        <div className="flex flex-col justify-start space-y-4">
-          <form className="flex flex-col gap-4 w-full">
-            <div>
-              <label className="block text-gray-200">Name</label>
-              <input
-                type="text"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Your Name"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-200">Phone</label>
-              <input
-                type="tel"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Your Phone Number"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-200">Email</label>
-              <input
-                type="email"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Your Email"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-200">Message</label>
-              <textarea
-                className="w-full px-4 py-2 border border-gray-300 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Your Message"
-                rows="4"
-              ></textarea>
-            </div>
-            <div className="text-center">
-              <button
-                type="submit"
-                className="px-6 py-2 text-brand font-bold bg-white rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
+        <form className="flex flex-col gap-4 w-full max-w-md">
+          <div>
+            <label className="block text-gray-200">Name</label>
+            <input
+              type="text"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Your Name"
+            />
+          </div>
+          <div>
+            <label className="block text-gray-200">Phone</label>
+            <input
+              type="tel"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Your Phone Number"
+            />
+          </div>
+          <div>
+            <label className="block text-gray-200">Email</label>
+            <input
+              type="email"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Your Email"
+            />
+          </div>
+          <div>
+            <label className="block text-gray-200">Message</label>
+            <textarea
+              className="w-full px-4 py-2 border border-gray-300 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Your Message"
+              rows="4"
+            ></textarea>
+          </div>
+          <div className="text-center">
+            <button
+              type="submit"
+              className="px-6 py-2 text-brand font-bold bg-white rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );

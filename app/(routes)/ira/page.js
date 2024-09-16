@@ -9,7 +9,7 @@ import {
   ourMissionOfira,
   whatWeDoira,
   ourValuesOfira,
-  WhyChooseUsira
+  WhyChooseUsira,
 } from "@/app/constants";
 import WhyChooseUs from "../_components/WhyChooseUs";
 
@@ -18,7 +18,7 @@ function page() {
     <div className="overflow-hidden  pb-5 md:pb-10 space-y-6 bg-white">
       <LandingView
         heading={"IRA MEDIA & PRODUCTIONS"}
-        msg={"Clear vision & Pure thoughts"}
+        // msg={"Clear vision & Pure thoughts"}
       />
       <AboutUsG content={aboutUsOfira} />
       <OurMissionGlobal content={ourMissionOfira} />
@@ -26,7 +26,7 @@ function page() {
       <div className="bg-brand px-4 md:space-y-14 md:px-14 md:py-10 py-4 ">
         <OurValues startingFeatures={ourValuesOfira} />
       </div>
-      <WhyChooseUs reasons={WhyChooseUsira}/>
+      <WhyChooseUs reasons={WhyChooseUsira} />
     </div>
   );
 }

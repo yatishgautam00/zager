@@ -17,7 +17,10 @@ import { WhyChooseUsJK } from "@/app/constants";
 function page() {
   return (
     <div className="overflow-hidden space-y-6  bg-white">
-      <LandingView heading={"JK WORKS"} msg={"Clear vision & Pure thoughts"} />
+      <LandingView
+        heading={"JK WORKS"}
+        //  msg={"Clear vision & Pure thoughts"}
+      />
       <AboutUsG content={aboutUsOfJK} />
       <OurMissionGlobal content={ourMissionOfJK} />
       <WhatWeDo services={whatWeDoJK} />
