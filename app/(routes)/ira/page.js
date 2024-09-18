@@ -19,6 +19,8 @@ function page() {
       <LandingView
         heading={"IRA MEDIA & PRODUCTIONS"}
         // msg={"Clear vision & Pure thoughts"}
+        height={200}
+        extraWidth={100}
       />
       <AboutUsG content={aboutUsOfira} />
       <OurMissionGlobal content={ourMissionOfira} />

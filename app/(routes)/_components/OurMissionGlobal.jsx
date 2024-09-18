@@ -5,14 +5,14 @@ import { slideIn, staggerContainer, textVariant } from "@/app/utils/motion";
 function OurMissionGlobal({ content }) {
   return (
     <section>
-      <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
+      <div className="mx-auto max-w-screen-2xl px-4 py-16 pt-5 mb-8 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1  lg:grid-cols-2">
           <div className="relative z-1 lg:py-16">
             <div className="relative h-64 sm:h-80 lg:h-full">
               <img
                 alt=""
                 src="/ourServices/landingview.png"
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-96 w-full object-cover"
               />
             </div>
           </div>

@@ -16,7 +16,7 @@ function Footer() {
             </div>
 
             <p className=" text-xs pt-1 text-white">
-            It&lsquo;s All About Vales 
+            It&lsquo;s All About Values 
 
             </p>
 

@@ -246,3 +246,35 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes lineAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animated-line {
+  animation: lineAnimation 2s ease-out forwards;
+}
+
+.animated-line-1 {
+  animation-delay: 0s;
+}
+
+.animated-line-2 {
+  animation-delay: 1.5s;
+}
+
+.animated-line-3 {
+  animation-delay: 3s;
+}
+
+.animated-line-4 {
+  animation-delay: 4.5s;
+}

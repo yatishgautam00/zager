@@ -1,7 +1,6 @@
 import React from "react";
 import LandingView from "../_components/LandingView";
 import WhatWeDo from "../../_components/WhatWeDo";
-
 import AboutUsG from "../_components/AboutUsG";
 import { whatWeDoGyan } from "@/app/constants";
 import OurValues from "../_components/OurValues";
@@ -15,7 +14,9 @@ import EndingPageCard from "../_components/EndingPageCard";
 function page() {
   return (
     <div className="flex bg-white  space-y-6 overflow-hidden flex-col   ">
-      <LandingView heading={"GYAANADRI"} />
+      <LandingView heading={"GYAANADRI"} 
+        extraWidth={100}
+        />
       <AboutUsG content={aboutUsOfGyan} />
       <OurMissionGlobal content={ourMissionOfGyan} />
       <WhatWeDo services={whatWeDoGyan} />

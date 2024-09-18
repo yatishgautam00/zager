@@ -8,12 +8,13 @@ const DigitalMarketing = ({
   description,
   keywords,
   imagePosition,
+  id
 }) => {
   const isImageLeft = imagePosition === "left";
 
   return (
-    <section className="paddings relative z-10 bg-brand">
-      <div className="gradient-02 z-0" />
+    <section className="paddings relative z-10 bg-brand pt-10" id={id} >
+      <div className="gradient-02 z-0 " />
       <motion.div
         variants={staggerContainer(0.25, 0.25)}
         initial="hidden"

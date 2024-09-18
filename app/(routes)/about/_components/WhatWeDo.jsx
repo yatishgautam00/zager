@@ -6,6 +6,7 @@ import { TitleText, TypingText } from "@/app/_components/CustomText";
 import StartSteps from "@/app/_components/StartSteps";
 import { staggerContainer, fadeIn, planetVariants } from "@/app/utils/motion";
 import { newFeatures } from "@/app/constants";
+import { SparklesPreview } from "@/app/_components/SparklesPreview";
 // import NewFeatures from "@/app/_components/NewFeatures";
 
 const WhatsNew = () => (
@@ -21,7 +22,11 @@ const WhatsNew = () => (
         variants={fadeIn("right", "tween", 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| What We Do" textStyles={""} />
+        {/* <TypingText title="| What We Do" textStyles={""} /> */}
+        <SparklesPreview
+            name={<TypingText title={"| What We Do"} textStyles="" />}
+            extraWidth={10}
+          />
         <TitleText
           title={
             <div className="md:text-5xl text-3xl">

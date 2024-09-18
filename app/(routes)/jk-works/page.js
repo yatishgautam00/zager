@@ -20,6 +20,8 @@ function page() {
       <LandingView
         heading={"JK WORKS"}
         //  msg={"Clear vision & Pure thoughts"}
+        extraWidth={100}
+
       />
       <AboutUsG content={aboutUsOfJK} />
       <OurMissionGlobal content={ourMissionOfJK} />

@@ -3,11 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/app/utils/motion";
 
-const DesigningSection = ({ buttons, title, description, imagePosition }) => {
+const DesigningSection = ({ buttons, title, description, imagePosition,id }) => {
   const isButtonsLeft = imagePosition === "left";
 
   return (
-    <section className="paddings relative z-10">
+    <section className="paddings relative z-10 " id={id} >
       <div className="gradient-03 z-0" />
       <motion.div
         variants={staggerContainer(0.25, 0.25)}
@@ -18,7 +18,7 @@ const DesigningSection = ({ buttons, title, description, imagePosition }) => {
       >
         <motion.div variants={fadeIn("left", "tween", 0.2, 1)} className="">
           <div
-            className={`flex flex-col lg:flex-row items-start justify-between p-8 gap-12 bg-brand`}
+            className={`flex flex-col pt-16 lg:flex-row items-start justify-between p-8 gap-12 bg-brand`}
           >
             {/* Left or Right Side: Grid of buttons */}
             <div

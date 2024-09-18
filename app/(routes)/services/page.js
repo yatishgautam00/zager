@@ -15,7 +15,9 @@ import {
 function page() {
   return (
     <div className="overflow-hidden  pb-5 md:pb-10 space-y-6  bg-white">
-      <LandingView heading={"OUR SERVICES"} />
+      <LandingView heading={"OUR SERVICES"} 
+        extraWidth={150}
+        />
 
       <DigitalMarketing
         imageSrc="/Lesson-amico.png" // Dynamic image
@@ -24,11 +26,13 @@ function page() {
         search engines, email, and websites to reach and engage target audiences." // Dynamic description
         keywords={DigitalMarketingButtons01} // Dynamic keywords
         imagePosition="left"
+        id={"digitalMarketing"}
       />
       <DesigningSection
         title="WEBSITE DEVLOPMENT"
         description="The process of building and maintaining websites, involving tasks such as web design, coding, content creation, and server configuration to ensure functionality, user experience, and performance."
         buttons={WebsiteDevelopmentButtons}
+        id={"websiteDevelopment"}
         imagePosition="left"
       />
 
@@ -38,11 +42,14 @@ function page() {
         description="Support and technologies for software, networks, and tech issues to improve efficiency and address challenges." // Dynamic description
         keywords={ItSolutionsButtons} // Dynamic keywords
         imagePosition="right"
+        id={"itSolutions&Services"}
+
       />
       <DesigningSection
         title="Designing"
         description="The process of creating plans, concepts, and aesthetics for various projects, including graphics, products, and user experiences, to meet specific needs and objectives."
         buttons={DesigningButtons}
+        id={"designing"}
         imagePosition="right"
       />
       <DigitalMarketing
@@ -51,6 +58,8 @@ function page() {
         description="The process of generating engaging and valuable content in various formats  to attract and retain  audience, support marketing goals, and establish a brand's online presence." // Dynamic description
         keywords={ContentCreationButtons} // Dynamic keywords
         imagePosition="right"
+        id={"contentCreation"}
+
       />
       <DigitalMarketing
         imageSrc="/pana3.png" // Dynamic image
@@ -58,6 +67,8 @@ function page() {
         description="The process of creating content for various media platforms, encompassing all stages from concept development to final editing and distribution." // Dynamic description
         keywords={MediaProductionButtons} // Dynamic keywords
         imagePosition="left"
+        id={"mediaProduction"}
+
       />
       <DigitalMarketing
         imageSrc="/pana2.png" // Dynamic image
@@ -65,6 +76,8 @@ function page() {
         description="The art and science of designing and constructing buildings and other structures, focusing on aesthetics, functionality, and sustainability." // Dynamic description
         keywords={ArchitectureButtons} // Dynamic keywords
         imagePosition="right"
+        id={"architecture"}
+
       />
     </div>
   );

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { TitleText, TypingText } from "@/app/_components/CustomText";
 import StartSteps from "@/app/_components/StartSteps";
 import { staggerContainer, fadeIn, planetVariants } from "@/app/utils/motion";
+import { SparklesPreview } from "@/app/_components/SparklesPreview";
 
 function OurValues({ startingFeatures }) {
   return (
@@ -35,7 +36,12 @@ function OurValues({ startingFeatures }) {
           variants={fadeIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] flex justify-center flex-col"
         >
-          <TypingText title="| OUR VALUES" />
+          {/* <TypingText title="| OUR VALUES" /> */}
+          <SparklesPreview
+            name={<TypingText title={"| OUR VALUES"} textStyles="" />}
+            extraWidth={10}
+          />
+
           <TitleText
             title={
               <div className="md:text-5xl text-3xl ">Values That Inspire</div>

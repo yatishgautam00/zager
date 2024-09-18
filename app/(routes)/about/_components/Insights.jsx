@@ -5,6 +5,7 @@ import { TitleText, TypingText } from "@/app/_components/CustomText";
 import { staggerContainer } from "@/app/utils/motion";
 import { insights } from "@/app/constants";
 import InsightCard from "@/app/_components/InsightCard";
+import { SparklesPreview } from "@/app/_components/SparklesPreview";
 
 const Insights = () => (
   <section className="paddings relative z-10">
@@ -17,7 +18,13 @@ const Insights = () => (
       viewport={{ once: false, amount: 0.25 }}
       className="innerWidth mx-auto flex flex-col"
     >
-      <TypingText title="| Insights" textStyles="text-center" />
+      {/* <TypingText title="| Insights" textStyles="text-center" /> */}
+      <SparklesPreview
+            name={<TypingText title={"| Insights"} textStyles="" />}
+            extraWidth={20}
+        textAlign={" text-center  items-center justify-center "}
+
+          />
       {/* <TitleText title="Let Grow Together" textStyles="text-center" /> */}
       <div className="mt-[50px] flex flex-col gap-[30px]">
         {insights.map((insight, index) => (

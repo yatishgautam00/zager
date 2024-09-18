@@ -8,41 +8,56 @@ const services = [
     title: "Digital Marketing",
     heading: "Tony Wayne",
     imageUrl: "/ourServices/1.png",
+    url:"/services#digitalMarketing"
+
   },
   {
     title: "Web Development",
     heading: "Tony Wayne",
     imageUrl: "/ourServices/6.png",
+    url:"/services#websiteDevelopment"
   },
   {
     title: "IT Solutions",
     heading: "Tony Wayne",
     imageUrl: "/ourServices/7.png",
+    url:"/services#itSolutions&Services"
+
   },
   {
     title: "Designing",
     heading: "Tony Wayne",
     imageUrl: "/ourServices/5.png",
+    url:"/services#designing"
+
   },
   {
     title: "Content Creation",
     heading: "Tony Wayne",
     imageUrl: "/ourServices/2.png",
+    url:"/services#contentCreation"
+
   },
   {
     title: "Media Production",
     heading: "Tony Wayne",
     imageUrl: "/ourServices/4.png",
+    url:"/services#mediaProduction"
+
   },
   {
     title: "Architecture",
     heading: "Tony Wayne",
     imageUrl: "/ourServices/3.png",
+    url:"/services#architecture"
+
   },
   {
     title: "influencer marketing",
     heading: "Tony Wayne",
     imageUrl: "/ourServices/8.jpg",
+    url:"/services#mediaProduction"
+
   },
   // Add more service objects here
 ];
@@ -82,7 +97,7 @@ function OurServiceCard() {
           )}
         >
           <Link
-            href="#"
+            href={service?.url || ""} 
             className={cn(
               "group relative block justify-center overflow-hidden rounded-lg",
               flipped.includes(index) ? "flip-container" : ""
@@ -107,7 +122,7 @@ function OurServiceCard() {
 
               {/* Explore Button */}
               <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                <button className="border-[3px] border-white text-white py-2 px-6 rounded-lg">
+                <button className="border-[3px] border-white text-white py-2 px-6 rounded-lg hover:border-black hover:bg-white hover:text-brand">
                   Explore
                 </button>
               </div>

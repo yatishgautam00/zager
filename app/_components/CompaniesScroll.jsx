@@ -9,7 +9,7 @@ const companies = [
   { src: "/logo/Boxoffice.png", alt: "logo" },
   { src: "/logo/church.png", alt: "logo" },
   { src: "/logo/csit.png", alt: "logo" },
-  { src: "/logo/eye.png", alt: "logo" },
+  // { src: "/logo/eye.png", alt: "logo" },
   { src: "/logo/finedine.png", alt: "logo" },
   { src: "/logo/front.png", alt: "logo" },
   { src: "/logo/Front@4x.png", alt: "logo" },

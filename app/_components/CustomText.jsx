@@ -7,7 +7,7 @@ export const TypingText = ({ title, textStyles }) => (
   <div>
     <motion.p
       variants={textContainer}
-      className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
+      className={`font-normal text-secondary-white ${textStyles}  `}
     >
       {typeof title === "string" &&
         Array.from(title).map((letter, index) => (

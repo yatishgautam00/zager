@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypingText } from "@/app/_components/CustomText";
 import { fadeIn, staggerContainer } from "@/app/utils/motion";
+import { SparklesPreview } from "@/app/_components/SparklesPreview";
 
 function OurMissionText() {
   return (
@@ -17,7 +18,17 @@ function OurMissionText() {
         viewport={{ once: false, amount: 0.25 }}
         className="innerWidth mx-auto flexCenter flex-col"
       >
-        <TypingText title="| OUR MISSION" textStyles="text-center" />
+        {/* <TypingText title="| OUR MISSION" textStyles="text-center" /> */}
+        <SparklesPreview
+          name={
+            <TypingText
+              title={"| OUR MISSION"}
+              textStyles="text-center text-lg "
+            />
+          }
+        textAlign={"  items-center justify-center "}
+extraWidth={20}
+        />
 
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
@@ -37,7 +48,7 @@ function OurMissionText() {
         </motion.p>
         <motion.div variants={fadeIn("up", "tween", 0.3, 1)}>
           <Link
-            href="#ourmission"
+            href="#ourvalues"
             className="w-full flex items-center justify-center"
           >
             <Image
