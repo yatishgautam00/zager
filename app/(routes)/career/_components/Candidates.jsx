@@ -6,6 +6,7 @@ import { TitleText, TypingText } from "@/app/_components/CustomText";
 import { staggerContainer } from "@/app/utils/motion";
 import CandidateCard from "../../_components/CandidateCard";
 import { candidateCard } from "@/app/constants";
+import { SparklesPreview } from "@/app/_components/SparklesPreview";
 
 const Candidate = () => {
   const [active, setActive] = useState("2");
@@ -18,9 +19,15 @@ const Candidate = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="innerWidth mx-auto flex flex-col"
+        className=" mx-auto flex flex-col"
       >
-        <TypingText title="| OUR IDEAL CANDIDATES" textStyles="text-center" />
+        {/* <TypingText title="| OUR IDEAL CANDIDATES" textStyles="text-center" /> */}
+        <SparklesPreview
+            name={<TypingText title={"| OUR IDEAL CANDIDATES"} textStyles="" />}
+            extraWidth={20}
+        textAlign={" text-center  items-center justify-center "}
+
+          />
         <TitleText
           title={
             <span className="text-2xl">
@@ -29,7 +36,7 @@ const Candidate = () => {
           }
           textStyles="text-center"
         />
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70wh] gap-5">
+        <div className="mt-5 flex lg:flex-row flex-col min-h-[70wh] gap-5">
           {candidateCard.map((world, index) => (
             <CandidateCard
               key={world.title}

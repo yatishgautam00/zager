@@ -17,7 +17,7 @@ function LandingView({ heading, msg, name, height, textAlign, extraWidth }) {
 
   return (
     <div
-      className={`relative flex flex-row w-full ${textAlign} bg-brand h-[50px] md:h-[70vh] justify-center items-center px-4 overflow-hidden`}
+      className={`relative flex flex-row w-full ${textAlign} bg-brand h-[50vh] md:h-[70vh] justify-center items-center px-4 overflow-hidden`}
     >
       {/* Full background sparkles */}
       <div className="w-full absolute inset-0 h-full z-10">
@@ -42,7 +42,7 @@ function LandingView({ heading, msg, name, height, textAlign, extraWidth }) {
 
         {/* Animated lines */}
         <div
-          className="relative  h-10 md:h-36"
+          className="relative   md:h-16"
           style={{ width: textWidth + "px" }}
         >
           {/* Gradients with animation */}

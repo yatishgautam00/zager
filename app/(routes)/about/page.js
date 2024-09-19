@@ -8,24 +8,29 @@ import WhatWeDo from "../../_components/WhatWeDo";
 import WhatsNew from "./_components/WhatWeDo";
 import Insights from "./_components/Insights";
 import { startingFeatures } from "@/app/constants";
+import LandingView from "../_components/LandingView";
 function page() {
   return (
     <main className="bg-primary-black pb-5 md:pb-10 overflow-hidden flex flex-col gap-14">
       {/* <Hero /> */}
-      <div className="pt-24 px-14">
+      <LandingView heading={"ABOUT US"} 
+        extraWidth={100}
+      height={0}
+      />
+      <div className="px-8 md:px-10">
         <AboutUsText />
       </div>
-      <div className="pt-24 px-14" id="ourmission">
+      <div className="pt-16 px-8 md:px-14" id="ourmission">
         <OurMissionText />
       </div>
 
-      <div className="pt-24 px-14 relative " id="ourvalues">
+      <div className="pt-16 px-8 md:px-14 relative " id="ourvalues">
         <OurValues startingFeatures={startingFeatures} />
       </div>
-      <div className="pt-24 px-14 relative " id="what-we-do">
+      <div className="pt-16 px-8 md:px-14 relative " id="what-we-do">
         <WhatsNew />
       </div>
-      <div className="pt-24 px-14 mb-10 relative " id="insights">
+      <div className="pt-16 px-8 md:px-14 mb-10 relative " id="insights">
         <Insights />
       </div>
     </main>

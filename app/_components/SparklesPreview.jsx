@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { SparklesCore } from "@/components/ui/sparkles";
 
-export function SparklesPreview({ name, height, textAlign, extraWidth }) {
+export function SparklesPreview({ name, height, textAlign, extraWidth, sparklesColor }) {
   const [textWidth, setTextWidth] = useState(0);
   const textRef = useRef(null);
 
@@ -18,12 +18,12 @@ export function SparklesPreview({ name, height, textAlign, extraWidth }) {
   return (
     <div className={`flex flex-row w-full ${textAlign}`}>
       <div className=" w-max  flex flex-col items- justify-center  rounded-md">
-        <h1 ref={textRef} className=" text-white relative z-20">
+        <h1 ref={textRef} className="  relative z-20">
           {name}
         </h1>
 
         <div
-          className="relative h-10"
+          className="relative h-8"
           style={{ width: textWidth + "px", height: height }}
         >
           {/* Gradients */}
@@ -37,9 +37,9 @@ export function SparklesPreview({ name, height, textAlign, extraWidth }) {
             background="transparent"
             minSize={0.2}
             maxSize={1}
-            particleDensity={2000}
+            particleDensity={1600}
             className="w-full h-full"
-            particleColor="#FFFFFF"
+            particleColor={sparklesColor || "#FFFFFF"}
           />
 
           {/* Radial Gradient */}

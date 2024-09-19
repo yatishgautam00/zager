@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypingText } from "@/app/_components/CustomText";
 import { fadeIn, staggerContainer } from "@/app/utils/motion";
+import { SparklesPreview } from "@/app/_components/SparklesPreview";
 
 const JoinOurTeamText = () => (
   <section className="paddings relative z-10 text-white px-4 md:px-10">
@@ -16,8 +17,13 @@ const JoinOurTeamText = () => (
       viewport={{ once: false, amount: 0.25 }}
       className="innerWidth mx-auto flexCenter flex-col"
     >
-      <TypingText title="| JOIN OUR TEAM" textStyles="text-center" />
+      {/* <TypingText title="| JOIN OUR TEAM" textStyles="text-center" /> */}
+      <SparklesPreview
+            name={<TypingText title={"| JOIN OUR TEAM"} textStyles="" />}
+            extraWidth={20}
+        textAlign={" text-center  items-center justify-center "}
 
+          />
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-[8px] font-normal md:text-xl text-lg text-center text-white text-secondary-white"

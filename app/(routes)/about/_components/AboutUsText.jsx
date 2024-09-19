@@ -18,17 +18,17 @@ const AboutUsText = () => (
       className="innerWidth mx-auto flexCenter flex-col"
     >
       {/* <TypingText title="| ABOUT US" textStyles="text-center" /> */}
-      <SparklesPreview
+      {/* <SparklesPreview
         name={
           <TypingText
             title={"ABOUT US"}
-            textStyles="text-center md:text-6xl text-4xl lg:text-8xl "
+            textStyles="text-center text-lg"
           />
         }
-        height={"80px"}
-        extraWidth={60}
+        height={""}
+        extraWidth={20}
         textAlign={" text-center items-center justify-center "}
-      />
+      /> */}
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="mt-0 font-normal sm:text-[32px] items-center text-justify flex flex-col text-[20px]  text-white text-secondary-white"
