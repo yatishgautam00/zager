@@ -3,10 +3,29 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-
+import fetchUrlFromFirestore from "@/lib/fetchUrlFromFirestore";
 const OurInfo2 = () => {
   const [isVisible, setIsVisible] = useState(false);
   const componentRef = useRef(null);
+  const [url, setUrl] = useState(null);
+  const [error, setError] = useState(null);
+  const collectionName = "generalImage";  // Define your collection name
+  const documentName = "doc";  
+  useEffect(() => {
+    const getUrl = async () => {
+
+      setError(null); // Reset error before fetching
+
+      try {
+        const fetchedUrl = await fetchUrlFromFirestore(collectionName, documentName);
+        setUrl(fetchedUrl); // Update URL state with the fetched URL
+      } catch (error) {
+        setError('Error fetching URL');
+      } 
+    };
+
+    getUrl(); // Call the async function inside useEffect
+  }, [collectionName, documentName]); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -42,7 +61,11 @@ const OurInfo2 = () => {
         )}
         style={{ width: "50%" }}
       >
-        <Image src="/ourServices/ourinfo.png" alt="Sliding Image" layout="fill" objectFit="cover" />
+         {url ? (
+          <Image src={url} alt="Sliding Image" layout="fill" objectFit="cover" />
+        ) : (
+          <p>Loading image...</p>
+        )}
       </div>
       <div
         className={cn(

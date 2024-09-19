@@ -2,70 +2,82 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
+import { firestore } from "@/lib/firebase"; 
+// const services = [
+//   {
+//     title: "Digital Marketing",
+//     imageUrl: "/ourServices/1.png",
+//     url: "/services#digitalMarketing",
+//     index: 1,
+//   },
+//   {
+//     title: "Web Development",
+//     imageUrl: "/ourServices/6.png",
+//     url: "/services#websiteDevelopment",
+//     index: 2,
+//   },
+//   {
+//     title: "IT Solutions",
+//     imageUrl: "/ourServices/7.png",
+//     url: "/services#itSolutions&Services",
+//     index: 3,
+//   },
+//   {
+//     title: "Designing",
+//     imageUrl: "/ourServices/5.png",
+//     url: "/services#designing",
+//     index: 4,
+//   },
+//   {
+//     title: "Content Creation",
+//     imageUrl: "/ourServices/2.png",
+//     url: "/services#contentCreation",
+//     index: 5,
+//   },
+//   {
+//     title: "Media Production",
+//     imageUrl: "/ourServices/4.png",
+//     url: "/services#mediaProduction",
+//     index: 6,
+//   },
+//   {
+//     title: "Architecture",
 
-const services = [
-  {
-    title: "Digital Marketing",
-    heading: "Tony Wayne",
-    imageUrl: "/ourServices/1.png",
-    url:"/services#digitalMarketing"
+//     imageUrl: "/ourServices/3.png",
+//     url: "/services#architecture",
 
-  },
-  {
-    title: "Web Development",
-    heading: "Tony Wayne",
-    imageUrl: "/ourServices/6.png",
-    url:"/services#websiteDevelopment"
-  },
-  {
-    title: "IT Solutions",
-    heading: "Tony Wayne",
-    imageUrl: "/ourServices/7.png",
-    url:"/services#itSolutions&Services"
-
-  },
-  {
-    title: "Designing",
-    heading: "Tony Wayne",
-    imageUrl: "/ourServices/5.png",
-    url:"/services#designing"
-
-  },
-  {
-    title: "Content Creation",
-    heading: "Tony Wayne",
-    imageUrl: "/ourServices/2.png",
-    url:"/services#contentCreation"
-
-  },
-  {
-    title: "Media Production",
-    heading: "Tony Wayne",
-    imageUrl: "/ourServices/4.png",
-    url:"/services#mediaProduction"
-
-  },
-  {
-    title: "Architecture",
-    heading: "Tony Wayne",
-    imageUrl: "/ourServices/3.png",
-    url:"/services#architecture"
-
-  },
-  {
-    title: "influencer marketing",
-    heading: "Tony Wayne",
-    imageUrl: "/ourServices/8.jpg",
-    url:"/services#mediaProduction"
-
-  },
-  // Add more service objects here
-];
+//     index: 7,
+//   },
+//   {
+//     title: "influencer marketing",
+//     imageUrl: "/ourServices/8.jpg",
+//     url: "/services#mediaProduction",
+//     index: 8,
+//   },
+//   // Add more service objects here
+// ];
 
 function OurServiceCard() {
   const [flipped, setFlipped] = useState([]);
-
+  const [services, setServices] = useState([]);
   useEffect(() => {
+    // Fetch services data from Firestore
+    const fetchServices = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(firestore, "serviceCard"));
+        const servicesData = querySnapshot.docs.map((doc) => doc.data());
+        
+        // Sort the services data by index field
+        const sortedServices = servicesData.sort((a, b) => a.index - b.index);
+        setServices(sortedServices);
+      } catch (error) {
+        console.error("Error fetching services data:", error);
+      }
+    };
+
+    fetchServices();
+
     // Randomly select some cards to flip and zoom
     const flipIndices = new Set();
     while (flipIndices.size < Math.floor(0)) {
@@ -80,11 +92,12 @@ function OurServiceCard() {
           index === Math.floor(Math.random() * services.length) ? index : index
         )
       );
-    }, 5000); // Flip every 2 seconds
+    }, 5000); // Flip every 5 seconds
 
     // Clean up the interval on component unmount
     return () => clearInterval(intervalId);
-  }, []);
+  }, [services.length]);
+
 
   return (
     <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -97,7 +110,7 @@ function OurServiceCard() {
           )}
         >
           <Link
-            href={service?.url || ""} 
+            href={service?.url || ""}
             className={cn(
               "group relative block justify-center overflow-hidden rounded-lg",
               flipped.includes(index) ? "flip-container" : ""
@@ -128,7 +141,9 @@ function OurServiceCard() {
               </div>
             </div>
           </Link>
-          <h2 className="text-center text-2xl font-medium uppercase">{service.title}</h2>
+          <h2 className="text-center text-2xl font-medium uppercase">
+            {service.title}
+          </h2>
         </div>
       ))}
     </div>
