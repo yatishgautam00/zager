@@ -4,59 +4,6 @@ import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { firestore } from "@/lib/firebase"; 
-// const services = [
-//   {
-//     title: "Digital Marketing",
-//     imageUrl: "/ourServices/1.png",
-//     url: "/services#digitalMarketing",
-//     index: 1,
-//   },
-//   {
-//     title: "Web Development",
-//     imageUrl: "/ourServices/6.png",
-//     url: "/services#websiteDevelopment",
-//     index: 2,
-//   },
-//   {
-//     title: "IT Solutions",
-//     imageUrl: "/ourServices/7.png",
-//     url: "/services#itSolutions&Services",
-//     index: 3,
-//   },
-//   {
-//     title: "Designing",
-//     imageUrl: "/ourServices/5.png",
-//     url: "/services#designing",
-//     index: 4,
-//   },
-//   {
-//     title: "Content Creation",
-//     imageUrl: "/ourServices/2.png",
-//     url: "/services#contentCreation",
-//     index: 5,
-//   },
-//   {
-//     title: "Media Production",
-//     imageUrl: "/ourServices/4.png",
-//     url: "/services#mediaProduction",
-//     index: 6,
-//   },
-//   {
-//     title: "Architecture",
-
-//     imageUrl: "/ourServices/3.png",
-//     url: "/services#architecture",
-
-//     index: 7,
-//   },
-//   {
-//     title: "influencer marketing",
-//     imageUrl: "/ourServices/8.jpg",
-//     url: "/services#mediaProduction",
-//     index: 8,
-//   },
-//   // Add more service objects here
-// ];
 
 function OurServiceCard() {
   const [flipped, setFlipped] = useState([]);

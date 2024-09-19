@@ -24,7 +24,7 @@ const PlainCard = ({ title, description, index }) => {
         <div className="shadow-lg rounded-lg flex flex-col justify-between bg-brand p-6 pb-0 px-0 text-center w-full lg:w-full min-h-[350px]"> {/* Set minimum height */}
           <div className="flex justify-center mb-4">
             <Image
-              src="/ourServices/rocket.gif"
+              src="https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/generalImages%2Frocket.gif?alt=media&token=c2d816dd-9d68-4fb1-9e3b-8bf7b81aa693"
               alt={title}
               width={100}
               height={100}

@@ -11,7 +11,7 @@ function OurMissionGlobal({ content }) {
             <div className="relative h-64 sm:h-80 lg:h-full">
               <img
                 alt=""
-                src="/ourServices/landingview.png"
+                src="https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/generalImages%2Flandingview.png?alt=media&token=e8818540-97ba-4d01-8466-4df8754fcd44"
                 className="absolute inset-0 h-96 w-full object-cover"
               />
             </div>

@@ -50,25 +50,25 @@ function Footer() {
 
               <ul className="pt-3 space-y-2 text-sm ">
                 <li>
-                  <Link href="#" className=" transition hover:opacity-75">
+                  <Link href="/services#digitalMarketing" className=" transition hover:opacity-75">
                     {" "}
                     Digital Marketing{" "}
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#" className="transition hover:opacity-75">
+                  <Link href="/services#websiteDevelopment" className="transition hover:opacity-75">
                     Web Development
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" transition hover:opacity-75">
+                  <Link href="/services#itSolutions&Services" className=" transition hover:opacity-75">
                     IT Solutions
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="#" className="transition hover:opacity-75">
+                  <Link href="/services#designing" className="transition hover:opacity-75">
                     Designing
                   </Link>
                 </li>

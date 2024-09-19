@@ -20,7 +20,7 @@ function page() {
         />
 
       <DigitalMarketing
-        imageSrc="/Lesson-amico.png" // Dynamic image
+        imageSrc="https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/servicePage%2Fserviceimages%2FLesson-amico.png?alt=media&token=10a5f361-2474-49d4-927b-a3fca1903d47" // Dynamic image
         title="Digital Marketing" // Dynamic title
         description="The practice of promoting products or services using digital channels like social media, 
         search engines, email, and websites to reach and engage target audiences." // Dynamic description
@@ -37,7 +37,7 @@ function page() {
       />
 
       <DigitalMarketing
-        imageSrc="/pana4.png" // Dynamic image
+        imageSrc="https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/servicePage%2Fserviceimages%2Fpana4.png?alt=media&token=262ec209-20d1-4471-bf88-34ff3135ce96" // Dynamic image
         title="IT SOLUTION AND SEVICES" // Dynamic title
         description="Support and technologies for software, networks, and tech issues to improve efficiency and address challenges." // Dynamic description
         keywords={ItSolutionsButtons} // Dynamic keywords
@@ -53,7 +53,7 @@ function page() {
         imagePosition="right"
       />
       <DigitalMarketing
-        imageSrc="/pana.png" // Dynamic image
+        imageSrc="https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/servicePage%2Fserviceimages%2Fpana.png?alt=media&token=e8863f7a-8894-4c66-a96c-97193b308d62" // Dynamic image
         title="CONTENT CREATION" // Dynamic title
         description="The process of generating engaging and valuable content in various formats  to attract and retain  audience, support marketing goals, and establish a brand's online presence." // Dynamic description
         keywords={ContentCreationButtons} // Dynamic keywords
@@ -62,7 +62,7 @@ function page() {
 
       />
       <DigitalMarketing
-        imageSrc="/pana3.png" // Dynamic image
+        imageSrc="https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/servicePage%2Fserviceimages%2Fpana4.png?alt=media&token=262ec209-20d1-4471-bf88-34ff3135ce96" // Dynamic image
         title="Media Production" // Dynamic title
         description="The process of creating content for various media platforms, encompassing all stages from concept development to final editing and distribution." // Dynamic description
         keywords={MediaProductionButtons} // Dynamic keywords
@@ -71,7 +71,7 @@ function page() {
 
       />
       <DigitalMarketing
-        imageSrc="/pana2.png" // Dynamic image
+        imageSrc="https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/servicePage%2Fserviceimages%2Fpana2.png?alt=media&token=0d95068c-1d2b-419f-9b45-49fad0c8193b" // Dynamic image
         title="ARCHITECTURE" // Dynamic title
         description="The art and science of designing and constructing buildings and other structures, focusing on aesthetics, functionality, and sustainability." // Dynamic description
         keywords={ArchitectureButtons} // Dynamic keywords

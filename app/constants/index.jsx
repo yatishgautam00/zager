@@ -12,13 +12,13 @@ export const newFeatures = [
 ];
 export const insights = [
   {
-    imgUrl: "/ourServices/ourinfo.png",
+    imgUrl: "https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/generalImages%2Fourinfo.png?alt=media&token=c850b259-a6cd-42e6-8a6c-dba45814bc2d",
     title: "OUR JOURNEY ",
     subtitle:
       "Since our inception, Zager Digital Services has been on a mission to transform the way businesses approach digital marketing and IT challenges. We’ve achieved significant milestones and built a track record of success by focusing on delivering exceptional results and building strong client relationships. ",
   },
   {
-    imgUrl: "/ourServices/ourinfo.png",
+    imgUrl: "https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/generalImages%2Fourinfo.png?alt=media&token=c850b259-a6cd-42e6-8a6c-dba45814bc2d",
     title: "LET’S GROW TOGETHER",
     subtitle:
       "Ready to take your business to the next level? Contact us today to learn how Zager Digital Services can help you achieve your digital marketing and IT goals. Together, we can build a brighter future for your business.",
@@ -28,28 +28,28 @@ export const insights = [
 export const candidateCard = [
   {
     id: "1",
-    imgUrl: "/ourServices/ideal/creativity.jpg",
+    imgUrl: "https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/servicePage%2Fcreativity.jpg?alt=media&token=d35c5edb-3f75-49ab-b62c-fc9873121c78",
     title: "CREATIVITY",
     content:
       "Bring fresh ideas and innovative approaches to digital marketing and IT challenges.",
   },
   {
     id: "2",
-    imgUrl: "/ourServices/ideal/analysis.jpg",
+    imgUrl: "https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/servicePage%2Fanalysis.jpg?alt=media&token=c8093d9c-115b-436d-89eb-00b07952150b",
     title: "ANALYTICAL",
     content:
       "Use data and insights to drive decisions and optimize performance.",
   },
   {
     id: "3",
-    imgUrl: "/ourServices/ideal/team.jpg",
+    imgUrl: "https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/servicePage%2Fteam.jpg?alt=media&token=be61255e-4ec7-4fa6-83c4-1fc2773f900b",
     title: "TEAM-ORIENTED",
     content:
       "Collaborate effectively with colleagues and clients to achieve common goals.",
   },
   {
     id: "4",
-    imgUrl: "/ourServices/ideal/ethic.jpg",
+    imgUrl: "https://firebasestorage.googleapis.com/v0/b/zager-website.appspot.com/o/servicePage%2Fethic.jpg?alt=media&token=eb22e650-b102-4451-9718-3231073003ed",
     title: "DRIVEN",
     content: "Demonstrate a strong work ethic and a passion for excellence.",
   },
@@ -60,7 +60,7 @@ export const whatWeDoGyan = [
     title: "Content Creation",
     description:
       "Our team of skilled creators produces high-quality content tailored to your interests. From in-depth articles to engaging multimedia, we ensure that every piece of content is crafted with care and accuracy.",
-    imageUrl: "/ourservices/gif1.gif",
+    imageUrl: "https://via.placeholder.com/100x100",
   },
   {
     title: "News Coverage",
@@ -108,7 +108,7 @@ export const whatWeDoJK = [
     title: "DESIGN",
     description:
       "Our team of experienced architects and designers crafts innovative and functional designs that reflect your style and needs. From residential and commercial buildings to bespoke interiors, we ensure every design is both aesthetically pleasing and practical.",
-    imageUrl: "/ourservices/gif1.gif",
+    imageUrl: "https://via.placeholder.com/100x100",
   },
   {
     title: "PLANNING",
@@ -142,7 +142,7 @@ export const whatWeDoira = [
     title: "DIGITAL MEDIA SERVICE",
     description:
       "We offer a range of digital media services including content creation, social media management, and digital strategy. Our approach is designed to enhance your digital footprint and maximize your online impact.",
-    imageUrl: "/ourservices/gif1.gif",
+    imageUrl: "https://via.placeholder.com/100x100",
   },
   {
     title: "FILMS",
