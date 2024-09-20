@@ -1,45 +1,50 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 import { motion } from "framer-motion";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-
-const companies = [
-  { src: "/logo/argo.png", alt: "logo" },
-  { src: "/logo/arise.jpg", alt: "logo" },
-  { src: "/logo/Boxoffice.png", alt: "logo" },
-  { src: "/logo/church.png", alt: "logo" },
-  { src: "/logo/csit.png", alt: "logo" },
-  // { src: "/logo/eye.png", alt: "logo" },
-  { src: "/logo/finedine.png", alt: "logo" },
-  { src: "/logo/front.png", alt: "logo" },
-  { src: "/logo/Front@4x.png", alt: "logo" },
-  { src: "/logo/fusion.png", alt: "logo" },
-  { src: "/logo/hygiene.jpg", alt: "logo" },
-  { src: "/logo/Logo.png", alt: "logo" },
-  { src: "/logo/Logo@4x.png", alt: "logo" },
-  { src: "/logo/lpc.png", alt: "logo" },
-  { src: "/logo/momos_nation2.png", alt: "logo" },
-  { src: "/logo/nidaanmonopng.PNG.png", alt: "logo" },
-  { src: "/logo/revive.png", alt: "logo" },
-  { src: "/logo/SANKALPA.png", alt: "logo" },
-  { src: "/logo/silveroak.png", alt: "logo" },
-  { src: "/logo/skygym.png", alt: "logo" },
-  { src: "/logo/timepass.png", alt: "logo" },
-  { src: "/logo/vkb.png", alt: "logo" },
-];
+import { storage } from "@/lib/firebase";
 
 const CompaniesScroll = () => {
- 
+  const [companies, setCompanies] = useState([]);
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const fetchCompanyImages = async () => {
+      try {
+        const folderRef = ref(storage, "companiesImages/");
+        const imageList = await listAll(folderRef);
+
+        // Fetch the URLs for each image
+        const imagePromises = imageList.items.map(async (imageRef) => {
+          const url = await getDownloadURL(imageRef);
+          return { src: url, alt: imageRef.name }; // Return image with URL and alt text
+        });
+
+        const images = await Promise.all(imagePromises); // Resolve all promises
+        setCompanies(images); // Update state with the image URLs
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching company images:", error);
+        setLoading(false);
+      }
+    };
+
+    fetchCompanyImages(); // Fetch images when component mounts
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>; // Show a loading indicator while images are being fetched
+  }
   return (
     <div className="relative w-full overflow-hidden border-b-8 border-b-brand bg-gray-300">
       <InfiniteMovingCards
-      items={companies}
-      direction="left"
-      speed="normal"
-      pauseOnHover={true}
-      className="my-custom-class"
-    />
+        items={companies}
+        direction="left"
+        speed="normal"
+        pauseOnHover={true}
+        className="my-custom-class"
+      />
     </div>
   );
 };
