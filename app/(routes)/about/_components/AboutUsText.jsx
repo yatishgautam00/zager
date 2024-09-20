@@ -49,7 +49,7 @@ const AboutUsText = () => (
       </motion.p>
       <motion.div variants={fadeIn("up", "tween", 0.3, 1)}>
         <Link
-          href="id"
+          href="#ourmission"
           className="w-full flex items-center justify-center"
         >
           <Image
