@@ -123,7 +123,7 @@ function Navbar({ className }) {
           )}
         >
           <Image
-            src="/Zlogo.png"
+            src="/logowhite.png"
             alt="Logo"
             className="h-12 w-auto"
             width={50}

@@ -21,7 +21,7 @@ function HowToApply() {
             <div className="flex items-center gap-4">
               <img
                 alt=""
-                src="/Zlogo.png"
+                src="/logowhite.png"
                 className="size-16 rounded-full object-cover"
               />
 
