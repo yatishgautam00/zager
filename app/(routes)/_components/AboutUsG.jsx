@@ -19,7 +19,7 @@ const AboutUsG = ({ content }) => (
     >
       {/* <TypingText title="| ABOUT US" textStyles="text-center" /> */}
       <SparklesPreview
-            name={<TypingText title={"| JOIN OUR TEAM"} textStyles="" />}
+            name={<TypingText title={"| ABOUT US"} textStyles="" />}
             extraWidth={20}
         textAlign={" text-center text-brand items-center justify-center "}
 sparklesColor={"#051224"}
